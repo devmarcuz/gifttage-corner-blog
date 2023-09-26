@@ -1,0 +1,40 @@
+.pagination {
+  display: flex;
+  align-items: center;
+}
+.pagination .pagination_btn {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(33, 63, 125, 0.1019607843);
+  border-radius: 4px;
+  color: rgba(33, 64, 125, 0.4392156863);
+  font-weight: 200;
+  font-weight: lighter;
+  cursor: not-allowed;
+}
+.pagination .pagination_btn.active-caret {
+  color: #213f7d;
+  cursor: pointer;
+}
+.pagination .pagination_btn .icon-pag {
+  font-size: 14px;
+}
+.pagination button {
+  background: none;
+  border: none;
+  padding: 3px 8px;
+  font-family: inherit;
+  font-size: 16px;
+  color: rgba(84, 95, 125, 0.5490196078);
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+.pagination button:hover {
+  color: #545f7d;
+}
+.pagination button.active {
+  color: #545f7d;
+}/*# sourceMappingURL=Pagination.css.map */

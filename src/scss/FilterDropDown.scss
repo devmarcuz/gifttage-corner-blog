@@ -1,0 +1,204 @@
+.filter-dropdown-container {
+  position: absolute;
+  background: white;
+  border: 1px solid rgba(84, 95, 125, 0.14);
+  box-shadow: 3px 5px 20px 0 rgba(0, 0, 0, 0.04);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 25px 15px;
+
+  .label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    position: relative;
+
+    svg {
+      position: absolute;
+      top: 55%;
+      left: 95%;
+      transform: translate(-95%, -55%);
+      pointer-events: none;
+      cursor: pointer;
+    }
+
+    label {
+      font-size: 14px;
+      font-weight: 500;
+      text-transform: capitalize;
+      margin-bottom: 3px;
+    }
+
+    input {
+      padding: 8px 12px;
+      margin-bottom: 15px;
+      border: 1px solid rgba(33, 63, 125, 0.2);
+      border-radius: 8px;
+      font-family: inherit;
+      width: 100%;
+      color: #545f7d;
+
+      &::placeholder {
+        color: #545f7d;
+        opacity: 70%;
+      }
+    }
+
+    .input {
+      width: 100%;
+      margin-bottom: 20px;
+      position: relative;
+
+      input {
+        padding: 8px 15px;
+        border: 1px solid rgba(33, 63, 125, 0.2);
+        border-radius: 8px;
+        font-family: inherit;
+        width: 100%;
+        margin: 0;
+
+        &::placeholder {
+          color: #545f7d;
+          opacity: 70%;
+        }
+
+        &[type="date"]::-webkit-calendar-picker-indicator {
+          //  display: none;
+          cursor: pointer;
+          opacity: 0;
+        }
+      }
+
+      .placeholder {
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        border: 1px solid rgba(33, 63, 125, 0.2);
+        border-radius: 8px;
+        border-right: none;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        padding-left: 15px;
+        color: rgb(84, 95, 125, 0.7);
+        font-weight: 400;
+        text-transform: capitalize;
+      }
+    }
+
+    .custom-select {
+      position: relative;
+      width: 100%;
+      cursor: pointer;
+      margin-bottom: 20px;
+
+      &__selected {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px;
+        border: 1px solid rgba(6, 89, 255, 0.2);
+        border-radius: 8px;
+        background-color: #fff;
+        font-size: 14px;
+        color: #545f7d;
+        opacity: 0.7;
+        font-weight: 400;
+        text-transform: capitalize;
+        width: 100%;
+        padding-left: 15px;
+
+        svg {
+          position: absolute;
+          top: 50%;
+          left: 95%;
+          transform: translate(-95%, -50%);
+        }
+      }
+
+      &__options {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        max-height: 160px;
+        overflow-y: auto;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-top: none;
+        border-radius: 0 0 4px 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+        z-index: 1;
+        text-align: start;
+        padding-left: 15px;
+      }
+
+      &__option {
+        padding: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: #f1f1f1;
+        }
+      }
+
+      &.open {
+        .custom-select__options {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+
+      &__selected {
+        &.selected {
+          color: #545f7d;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .actions {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+    button {
+      background: none;
+      border: 1px solid #545f7d;
+      width: 98px;
+      height: 40px;
+      font-family: "Work Sans", sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      color: #545f7d;
+      border-radius: 8px;
+      margin-right: 15px;
+      cursor: pointer;
+
+      &.filter {
+        background: #39cdcc;
+        border: 1px solid #39cdcc;
+        color: white;
+        margin: 0;
+      }
+    }
+  }
+}

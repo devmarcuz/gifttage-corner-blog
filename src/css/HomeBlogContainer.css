@@ -1,0 +1,397 @@
+.home-blog-container {
+  flex: 0.6;
+  padding-right: 20px;
+  transition: 0.3s all ease-in-out;
+}
+.home-blog-container .search-results {
+  width: 100%;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(241, 241, 241);
+  margin-bottom: 20px;
+}
+.home-blog-container .search-results h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 26px;
+}
+.home-blog-container .search-results p {
+  font-family: poppins;
+  padding-top: 15px;
+  font-size: 13px;
+}
+.home-blog-container .search-results .search-container {
+  width: 100%;
+  display: none;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 15px;
+}
+.home-blog-container .search-results .search-container .search {
+  width: 100%;
+  height: 45px;
+  overflow: hidden;
+}
+.home-blog-container .search-results .search-container .search input {
+  width: 90%;
+  padding: 10px;
+  border: none;
+  background: rgb(247, 247, 247);
+  font-family: "Work Sans", sans-serif;
+  font-size: 13px;
+  height: 100%;
+}
+.home-blog-container .search-results .search-container .search input::-moz-placeholder {
+  letter-spacing: 2px;
+  color: rgb(148, 148, 148);
+}
+.home-blog-container .search-results .search-container .search input::placeholder {
+  letter-spacing: 2px;
+  color: rgb(148, 148, 148);
+}
+.home-blog-container .search-results .search-container .search button {
+  width: 10%;
+  height: 100%;
+  border: none;
+  background: rgb(255, 235, 121);
+  cursor: pointer;
+  overflow: hidden;
+}
+.home-blog-container .search-results .search-container .search button svg {
+  text-align: center;
+  color: white;
+  font-size: 16px;
+}
+.home-blog-container .posts {
+  width: 100%;
+}
+.home-blog-container .posts .post .categorie {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: "Work Sans", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.home-blog-container .posts .post .categorie span {
+  padding: 0 15px;
+  position: relative;
+}
+.home-blog-container .posts .post .categorie span::before {
+  content: "";
+  position: absolute;
+  background: black;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  left: 0%;
+  bottom: 50%;
+}
+.home-blog-container .posts .post .categorie span:first-child {
+  padding-left: 0;
+  padding-right: 10px;
+}
+.home-blog-container .posts .post .categorie span:first-child::before {
+  position: absolute;
+  background: black;
+  width: 0;
+  height: 0;
+}
+.home-blog-container .posts .post .categorie span:last-child {
+  margin-right: 0;
+}
+.home-blog-container .posts .post .categorie span a {
+  color: black;
+}
+.home-blog-container .posts .post .categorie span a:hover {
+  color: rgb(196, 180, 88);
+}
+.home-blog-container .posts .post h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 26px;
+  padding: 15px 0;
+  transition: 0.2s all ease-in-out;
+  cursor: pointer;
+}
+.home-blog-container .posts .post h1:hover {
+  color: rgb(196, 180, 88);
+}
+.home-blog-container .posts .post .dates {
+  width: 100%;
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.home-blog-container .posts .post .dates span {
+  color: rgb(196, 180, 88);
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
+}
+.home-blog-container .posts .post .dates span:hover {
+  color: black;
+}
+.home-blog-container .posts .post .img {
+  height: 400px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.home-blog-container .posts .post .img a {
+  width: 100%;
+  height: 100%;
+}
+.home-blog-container .posts .post .img a img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.home-blog-container .posts .post .content {
+  font-size: 13px;
+  font-family: poppins;
+}
+.home-blog-container .posts .post .content a {
+  color: black;
+}
+.home-blog-container .posts .post .content a:hover {
+  color: rgb(228, 209, 105);
+}
+.home-blog-container .posts .post .footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.home-blog-container .posts .post .footer .socials {
+  display: flex;
+}
+.home-blog-container .posts .post .footer .socials svg {
+  margin-right: 15px;
+  font-size: 18px;
+  color: black;
+}
+.home-blog-container .posts .post .footer .socials svg:hover {
+  color: rgb(228, 209, 105);
+}
+.home-blog-container .posts .post .footer .end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+}
+.home-blog-container .posts .post .footer .end .border {
+  width: 70%;
+  height: 1px;
+  background: rgb(241, 241, 241);
+}
+.home-blog-container .posts .post .footer .end a {
+  color: rgb(196, 180, 88);
+  padding: 10px 0;
+  font-size: 12px;
+  border: 2px solid rgb(241, 241, 241);
+  width: 30%;
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  transition: 0.2s all ease-in-out;
+}
+.home-blog-container .posts .post .footer .end a:hover {
+  border-color: rgb(196, 180, 88);
+  color: black;
+}
+.home-blog-container.dark-mode .posts {
+  width: 100%;
+}
+.home-blog-container.dark-mode .posts .post .categorie span {
+  padding: 0 15px;
+  position: relative;
+}
+.home-blog-container.dark-mode .posts .post .categorie span::before {
+  content: "";
+  position: absolute;
+  background: rgba(255, 255, 255, 0.253);
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  left: 0%;
+  bottom: 50%;
+}
+.home-blog-container.dark-mode .posts .post .categorie span:first-child {
+  padding-left: 0;
+  padding-right: 10px;
+}
+.home-blog-container.dark-mode .posts .post .categorie span:first-child::before {
+  position: absolute;
+  background: black;
+  width: 0;
+  height: 0;
+}
+.home-blog-container.dark-mode .posts .post .categorie span:last-child {
+  margin-right: 0;
+}
+.home-blog-container.dark-mode .posts .post .categorie span a {
+  color: rgba(255, 255, 255, 0.897);
+}
+.home-blog-container.dark-mode .posts .post .categorie span a:hover {
+  color: rgb(196, 180, 88);
+}
+.home-blog-container.dark-mode .posts .post h1 {
+  color: rgb(196, 180, 88);
+}
+.home-blog-container.dark-mode .posts .post h1:hover {
+  color: rgb(255, 245, 187);
+}
+.home-blog-container.dark-mode .posts .post .dates {
+  color: white;
+}
+.home-blog-container.dark-mode .posts .post .dates span {
+  color: rgb(196, 180, 88);
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
+}
+.home-blog-container.dark-mode .posts .post .dates span:hover {
+  color: white;
+}
+.home-blog-container.dark-mode .posts .post .content {
+  color: white;
+}
+.home-blog-container.dark-mode .posts .post .content a {
+  color: white;
+}
+.home-blog-container.dark-mode .posts .post .content a:hover {
+  color: rgb(228, 209, 105);
+}
+.home-blog-container.dark-mode .posts .post .footer .socials {
+  display: flex;
+}
+.home-blog-container.dark-mode .posts .post .footer .socials svg {
+  margin-right: 15px;
+  font-size: 18px;
+  color: white;
+}
+.home-blog-container.dark-mode .posts .post .footer .socials svg:hover {
+  color: rgb(228, 209, 105);
+}
+.home-blog-container.dark-mode .posts .post .footer .end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+}
+.home-blog-container.dark-mode .posts .post .footer .end .border {
+  width: 70%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.13);
+}
+.home-blog-container.dark-mode .posts .post .footer .end a {
+  color: rgb(196, 180, 88);
+  padding: 10px 0;
+  font-size: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.13);
+  width: 30%;
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  transition: 0.2s all ease-in-out;
+}
+.home-blog-container.dark-mode .posts .post .footer .end a:hover {
+  border-color: rgb(196, 180, 88);
+  color: white;
+}
+.home-blog-container.dark-mode .search-results {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+}
+.home-blog-container.dark-mode .search-results h1 {
+  color: white;
+}
+.home-blog-container.dark-mode .search-results p {
+  color: white;
+}
+.home-blog-container.dark-mode .search-results .search-container .search input {
+  background: rgba(247, 247, 247, 0.027);
+  color: white;
+}
+.home-blog-container.dark-mode .search-results .search-container .search input::-moz-placeholder {
+  letter-spacing: 2px;
+  color: rgba(148, 148, 148, 0.541);
+}
+.home-blog-container.dark-mode .search-results .search-container .search input::placeholder {
+  letter-spacing: 2px;
+  color: rgba(148, 148, 148, 0.541);
+}
+.home-blog-container.dark-mode .search-results .search-container .search button {
+  background: rgb(143, 123, 12);
+}
+@media only screen and (max-width: 576px) {
+  .home-blog-container {
+    padding: 0;
+    flex: 0.2;
+  }
+  .home-blog-container .search-results .search-container {
+    display: flex;
+  }
+  .home-blog-container .search-results .search-container .search input {
+    width: 80%;
+  }
+  .home-blog-container .search-results .search-container .search button {
+    width: 20%;
+  }
+  .home-blog-container .posts .post .categorie {
+    font-size: 11px;
+  }
+  .home-blog-container .posts .post h1 {
+    width: 100%;
+    font-size: 23px;
+  }
+  .home-blog-container .posts .post .dates {
+    font-size: 11px;
+  }
+  .home-blog-container .posts .post .footer .end .border {
+    flex: 0.4;
+  }
+  .home-blog-container .posts .post .footer .end a {
+    flex: 0.6;
+    font-size: 11px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .home-blog-container .posts .post h1 {
+    width: 95%;
+  }
+  .home-blog-container .posts .post .footer .end .border {
+    width: 60%;
+  }
+  .home-blog-container .posts .post .footer .end a {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .home-blog-container .posts .post h1 {
+    width: 95%;
+  }
+  .home-blog-container .posts .post .footer .end .border {
+    width: 60%;
+  }
+  .home-blog-container .posts .post .footer .end a {
+    width: 40%;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .home-blog-container .posts .post h1 {
+    width: 95%;
+  }
+  .home-blog-container .posts .post .footer .end .border {
+    width: 60%;
+  }
+  .home-blog-container .posts .post .footer .end a {
+    width: 40%;
+  }
+}/*# sourceMappingURL=HomeBlogContainer.css.map */

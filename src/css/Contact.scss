@@ -1,0 +1,457 @@
+.contact {
+  main {
+    position: relative;
+
+    .contact-header {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      bottom: -9%;
+      left: 0;
+      pointer-events: none;
+
+      h1 {
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 100;
+        color: rgb(221, 170, 31);
+        font-size: 35px;
+      }
+    }
+  }
+
+  .contact-section {
+    width: 75%;
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+    margin: 100px auto;
+    margin-bottom: 100px;
+
+    .left-section {
+      flex: 0.4;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .right-section {
+      flex: 0.6;
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+
+      .content {
+        font-family: poppins;
+        width: 70%;
+        font-size: 13px;
+        font-weight: 300;
+
+        .text {
+          text-align: center;
+          margin-bottom: 20px;
+          line-height: 25px;
+
+          .span-1 {
+            overflow: hidden;
+            height: 15px;
+            position: relative;
+
+            a {
+              color: black;
+              position: relative;
+              transition: 0.3s all ease-in-out;
+
+              //   &::after {
+              //     content: "";
+              //     position: absolute;
+              //     bottom: -2px;
+              //     left: 0;
+              //     background: rgb(221, 170, 31);
+              //     height: 2px;
+              //     width: 100%;
+              //     transition: 0.3s all ease-in-out;
+              //   }
+
+              //   &:hover {
+              //     color: white;
+              //     z-index: 20;
+              //     &::after {
+              //       content: "koriechinoso@gmail.com";
+              //       background: rgb(221, 170, 31);
+              //       height: 100%;
+              //       width: 100%;
+              //       z-index: 10;
+              //     }
+              //   }
+            }
+
+            .bar {
+              position: absolute;
+              z-index: -1;
+              left: -1px;
+              bottom: 0%;
+              height: 1px;
+              width: 172px;
+              background: rgb(221, 170, 31);
+              transform-origin: bottom;
+              transition: 0.3s all ease-in-out;
+            }
+
+            &:hover {
+              a {
+                color: white;
+              }
+
+              .bar {
+                height: 20px;
+              }
+            }
+
+            &::after {
+              content: ".";
+              position: absolute;
+              top: -10%;
+              right: -2%;
+              font-family: poppins;
+              font-weight: 300;
+            }
+          }
+
+          .span-2 {
+            overflow: hidden;
+            height: 15px;
+            position: relative;
+
+            a {
+              color: black;
+              position: relative;
+              transition: 0.3s all ease-in-out;
+
+              //   &::after {
+              //     content: "";
+              //     position: absolute;
+              //     bottom: -2px;
+              //     left: 0;
+              //     background: rgb(221, 170, 31);
+              //     height: 2px;
+              //     width: 100%;
+              //     transition: 0.3s all ease-in-out;
+              //   }
+
+              //   &:hover {
+              //     color: white;
+              //     z-index: 20;
+              //     &::after {
+              //       content: "koriechinoso@gmail.com";
+              //       background: rgb(221, 170, 31);
+              //       height: 100%;
+              //       width: 100%;
+              //       z-index: 10;
+              //     }
+              //   }
+            }
+
+            .bar {
+              position: absolute;
+              z-index: -1;
+              left: -1px;
+              bottom: 0%;
+              height: 1px;
+              width: 166px;
+              background: rgb(221, 170, 31);
+              transform-origin: bottom;
+              transition: 0.3s all ease-in-out;
+            }
+
+            &:hover {
+              a {
+                color: white;
+              }
+
+              .bar {
+                height: 20px;
+              }
+            }
+          }
+
+          &.italic {
+            font-style: italic;
+          }
+        }
+      }
+
+      form {
+        font-family: poppins;
+        width: 70%;
+        font-size: 13px;
+        font-weight: 300;
+        margin-top: 50px;
+
+        input {
+          border: none;
+          border-bottom: 1px solid rgb(221, 170, 31);
+          padding: 0 15px;
+          padding-bottom: 3px;
+          font-family: inherit;
+          background: none;
+          width: 100%;
+          font-size: 12px;
+          font-weight: 300;
+          margin-bottom: 25px;
+
+          &::placeholder {
+            color: rgba(221, 170, 31, 0.932);
+            font-size: 13px;
+          }
+        }
+
+        .contain {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          input {
+            width: 48%;
+          }
+        }
+
+        textarea {
+          background: none;
+          outline: none;
+          border: none;
+          padding: 0 15px;
+          padding-bottom: 5px;
+          border-bottom: 1px solid rgb(221, 170, 31);
+          resize: none;
+          font-family: inherit;
+          width: 100%;
+          font-weight: 300;
+          margin-bottom: 25px;
+          font-size: 12px;
+
+          &::placeholder {
+            color: rgba(221, 170, 31, 0.932);
+            text-transform: uppercase;
+            font-size: 13px;
+          }
+        }
+
+        button {
+          outline: none;
+          border: none;
+          background: rgb(219, 169, 32);
+          padding: 8px 12px;
+          border-radius: 4px;
+          cursor: pointer;
+          color: white;
+          font-family: inherit;
+        }
+      }
+    }
+  }
+
+  &.dark-mode {
+    main {
+      .contact-header {
+        h1 {
+          color: rgb(255, 197, 39);
+        }
+      }
+    }
+
+    .contact-section {
+      .right-section {
+        .content {
+          color: white;
+
+          .text {
+            .span-1 {
+              a {
+                color: white;
+                z-index: 10;
+              }
+
+              .bar {
+                position: absolute;
+                z-index: 1;
+              }
+
+              &:hover {
+                a {
+                  color: black;
+                }
+
+                .bar {
+                  height: 20px;
+                }
+              }
+
+              &::after {
+                content: ".";
+                position: absolute;
+                top: -10%;
+                right: -2%;
+                font-family: poppins;
+                font-weight: 300;
+              }
+            }
+
+            .span-2 {
+              a {
+                color: white;
+                z-index: 10;
+              }
+
+              .bar {
+                position: absolute;
+                z-index: 1;
+                bottom: 0%;
+              }
+
+              &:hover {
+                a {
+                  color: black;
+                }
+
+                .bar {
+                  height: 20px;
+                }
+              }
+            }
+
+            &.italic {
+              font-style: italic;
+            }
+          }
+        }
+
+        form {
+          input {
+            color: white;
+
+            &::placeholder {
+              color: rgba(221, 170, 31, 0.527);
+              font-size: 13px;
+            }
+          }
+
+          textarea {
+            color: white;
+
+            &::placeholder {
+              color: rgba(221, 170, 31, 0.527);
+              font-size: 13px;
+            }
+          }
+
+          button {
+            background: rgb(136, 102, 7);
+          }
+        }
+      }
+    }
+  }
+
+  // Extra small devices (portrait phones)
+  @media only screen and (max-width: 576px) {
+    & {
+      main {
+        .contact-header {
+          bottom: -11%;
+          left: 0;
+
+          h1 {
+            font-weight: 100;
+            font-size: 33px;
+          }
+        }
+      }
+
+      .contact-section {
+        flex-direction: column;
+        margin-top: 60px;
+        width: 90%;
+
+        .right-section {
+          margin-top: 30px;
+          .content {
+            width: 100%;
+          }
+
+          form {
+            width: 100%;
+
+            .contain {
+              flex-direction: column;
+              align-items: flex-start;
+
+              input {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Small devices (landscape phones)
+  @media only screen and (min-width: 576px) and (max-width: 768px) {
+    & {
+      .contact-section {
+        .right-section {
+          .content {
+            width: 80%;
+          }
+
+          form {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+
+  // Medium devices (tablets)
+  @media only screen and (min-width: 769px) and (max-width: 992px) {
+    & {
+      .contact-section {
+        .right-section {
+          .content {
+            width: 80%;
+          }
+
+          form {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+
+  // Large devices (desktops)
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    & {
+      .contact-section {
+        .right-section {
+          .content {
+            width: 80%;
+          }
+
+          form {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+
+  // Extra large devices (large desktops)
+  @media only screen and (min-width: 1200px) {
+  }
+}

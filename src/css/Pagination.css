@@ -1,0 +1,94 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 1px solid rgb(241, 241, 241);
+}
+.pagination .pagination_btn {
+  align-items: center;
+  height: 35px;
+  justify-content: center;
+  font-weight: 500;
+  color: black;
+  font-weight: lighter;
+  cursor: not-allowed;
+  padding: 0 15px;
+  border-right: 1px solid rgb(241, 241, 241);
+  font-weight: 500;
+  display: none;
+}
+.pagination .pagination_btn.active-caret {
+  display: flex;
+  cursor: pointer;
+  font-weight: 500;
+}
+.pagination .pagination_btn .icon-pag {
+  font-size: 12px;
+}
+.pagination .pagination_btn svg {
+  text-align: center;
+  font-size: 8px;
+}
+.pagination .pagination_btn:hover {
+  background: black;
+  color: white;
+}
+.pagination button {
+  background: none;
+  border: none;
+  padding: 0px 15px;
+  font-family: inherit;
+  font-size: 16px;
+  color: black;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+  height: 35px;
+  border-right: 1px solid rgb(241, 241, 241);
+}
+.pagination button:hover {
+  color: #ffffff;
+  background: black;
+}
+.pagination button.active {
+  color: #ffffff;
+  background: black;
+}
+.pagination button.pagination__ellipsis {
+  cursor: default;
+}
+.pagination button.pagination__ellipsis:hover {
+  color: black;
+  background: none;
+}
+.pagination .empty-btn {
+  display: none;
+}
+.pagination.dark-mode {
+  border: 1px solid rgba(255, 255, 255, 0.13);
+}
+.pagination.dark-mode .pagination_btn {
+  border-right: 1px solid rgba(255, 255, 255, 0.13);
+  color: rgb(196, 180, 88);
+}
+.pagination.dark-mode button {
+  border-right: 1px solid rgba(255, 255, 255, 0.13);
+  color: rgb(196, 180, 88);
+}
+@media only screen and (max-width: 576px) {
+  .pagination {
+    flex-wrap: wrap;
+  }
+  .pagination .empty-btn {
+    display: flex;
+    padding: 0px 10px;
+    height: 35px;
+    pointer-events: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+    color: white;
+  }
+  .pagination.dark-mode .empty-btn {
+    color: rgb(19, 19, 19);
+  }
+}/*# sourceMappingURL=Pagination.css.map */

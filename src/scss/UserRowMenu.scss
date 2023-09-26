@@ -1,0 +1,28 @@
+.row-menu {
+  position: absolute;
+  background: white;
+  right: -10%;
+  bottom: -230%;
+  border: 1px solid;
+  border-color: #545f7d0a;
+  z-index: 5;
+  width: 180px;
+  padding-bottom: 25px;
+  display: none;
+
+  .item {
+    display: flex;
+    padding: 0 30px;
+    padding-top: 25px;
+    cursor: pointer;
+
+    svg {
+      margin-right: 10px;
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+}

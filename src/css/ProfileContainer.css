@@ -1,0 +1,291 @@
+.profile-container {
+  flex: 0.4;
+  font-family: "Work Sans", sans-serif;
+}
+.profile-container .search-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.profile-container .search-container .search {
+  width: 90%;
+  height: 45px;
+  overflow: hidden;
+}
+.profile-container .search-container .search input {
+  width: 80%;
+  padding: 10px;
+  border: none;
+  background: rgb(247, 247, 247);
+  font-family: "Work Sans", sans-serif;
+  font-size: 13px;
+  height: 100%;
+}
+.profile-container .search-container .search input::-moz-placeholder {
+  letter-spacing: 2px;
+  color: rgb(148, 148, 148);
+}
+.profile-container .search-container .search input::placeholder {
+  letter-spacing: 2px;
+  color: rgb(148, 148, 148);
+}
+.profile-container .search-container .search button {
+  width: 20%;
+  height: 100%;
+  border: none;
+  background: rgb(255, 235, 121);
+  cursor: pointer;
+  overflow: hidden;
+}
+.profile-container .search-container .search button svg {
+  text-align: center;
+  color: white;
+  font-size: 16px;
+}
+.profile-container .profile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 80px;
+}
+.profile-container .profile img {
+  width: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 350px;
+  margin-bottom: 20px;
+}
+.profile-container .profile p {
+  text-align: center;
+  font-family: poppins;
+  width: 90%;
+  font-size: 13px;
+}
+.profile-container .profile h1 {
+  width: 90%;
+  font-family: "Allura", cursive;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 45px;
+  transform: scale(1.2);
+}
+.profile-container .newsletter {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.profile-container .newsletter form {
+  width: 90%;
+  background: rgb(255, 235, 121);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 25px;
+}
+.profile-container .newsletter form h1 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 29px;
+  font-family: "Cormorant Garamond", serif;
+}
+.profile-container .newsletter form p {
+  font-family: poppins;
+  margin-top: 30px;
+  color: rgb(247, 141, 114);
+  font-size: 13px;
+}
+.profile-container .newsletter form input {
+  margin-top: 15px;
+  background: none;
+  padding-bottom: 8px;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  width: 100%;
+}
+.profile-container .newsletter form input::-moz-placeholder {
+  color: white;
+}
+.profile-container .newsletter form input::placeholder {
+  color: white;
+}
+.profile-container .newsletter form button {
+  margin-top: 15px;
+  background: rgb(247, 162, 114);
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  font-family: "Work Sans", sans-serif;
+  text-transform: uppercase;
+  border-radius: 50px;
+  color: white;
+  transition: 0.2s all ease-in-out;
+}
+.profile-container .newsletter form button:hover {
+  background: black;
+}
+.profile-container .post-container {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.profile-container .post-container .content {
+  width: 90%;
+}
+.profile-container .post-container .content .title {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  background: rgb(255, 235, 121);
+  text-transform: uppercase;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+}
+.profile-container .post-container .content .posts {
+  margin-top: 18px;
+  width: 100%;
+  border-bottom: 1px solid rgb(218, 218, 218);
+  padding-bottom: 10px;
+}
+.profile-container .post-container .content .posts a {
+  color: black;
+  width: 100%;
+  font-size: 14px;
+  transition: 0.3s all ease-in-out;
+}
+.profile-container .post-container .content .posts a:hover {
+  color: rgb(228, 209, 105);
+}
+.profile-container .post-container .content .socials {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.profile-container .post-container .content .socials a {
+  color: black;
+  font-size: 20px;
+  transition: 0.3s all ease-in-out;
+}
+.profile-container .post-container .content .socials a:hover {
+  color: rgb(228, 209, 105);
+}
+.profile-container.dark-mode .search-container .search input {
+  background: rgba(247, 247, 247, 0.027);
+  color: white;
+}
+.profile-container.dark-mode .search-container .search input::-moz-placeholder {
+  letter-spacing: 2px;
+  color: rgba(148, 148, 148, 0.541);
+}
+.profile-container.dark-mode .search-container .search input::placeholder {
+  letter-spacing: 2px;
+  color: rgba(148, 148, 148, 0.541);
+}
+.profile-container.dark-mode .search-container .search button {
+  background: rgb(143, 123, 12);
+}
+.profile-container.dark-mode .profile p {
+  color: white;
+}
+.profile-container.dark-mode .profile h1 {
+  color: white;
+}
+.profile-container.dark-mode .newsletter form {
+  background: rgb(143, 123, 12);
+}
+.profile-container.dark-mode .newsletter form input {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.651);
+  color: rgba(255, 255, 255, 0.651);
+}
+.profile-container.dark-mode .newsletter form input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.651);
+}
+.profile-container.dark-mode .newsletter form input::placeholder {
+  color: rgba(255, 255, 255, 0.651);
+}
+.profile-container.dark-mode .newsletter form button {
+  background: rgb(180, 68, 3);
+}
+.profile-container.dark-mode .newsletter form button:hover {
+  background: black;
+}
+.profile-container.dark-mode .post-container .content .title {
+  background: rgb(143, 123, 12);
+}
+.profile-container.dark-mode .post-container .content .posts {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+}
+.profile-container.dark-mode .post-container .content .posts a {
+  color: white;
+}
+.profile-container.dark-mode .post-container .content .posts a:hover {
+  color: rgb(228, 209, 105);
+}
+.profile-container.dark-mode .post-container .content .socials a {
+  color: white;
+}
+.profile-container.dark-mode .post-container .content .socials a:hover {
+  color: rgb(228, 209, 105);
+}
+@media only screen and (max-width: 576px) {
+  .profile-container {
+    flex: 1;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .profile-container .search-container {
+    margin-top: 50px;
+  }
+  .profile-container .search-container .search {
+    width: 100%;
+  }
+  .profile-container .profile img {
+    width: 100%;
+  }
+  .profile-container .profile p {
+    width: 100%;
+  }
+  .profile-container .profile h1 {
+    width: 100%;
+    font-family: "Allura", cursive;
+  }
+  .profile-container .newsletter form {
+    width: 100%;
+  }
+  .profile-container .newsletter form h1 {
+    font-size: 25px;
+  }
+  .profile-container .post-container .content {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .profile-container .newsletter form h1 {
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .profile-container .newsletter form h1 {
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .profile-container .newsletter form h1 {
+    font-size: 25px;
+  }
+}/*# sourceMappingURL=ProfileContainer.css.map */

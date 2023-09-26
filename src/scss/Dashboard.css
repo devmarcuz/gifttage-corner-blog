@@ -1,0 +1,692 @@
+.dashboard-container {
+  background: #fbfbfb;
+  height: 100%;
+}
+.dashboard-container .main-container {
+  display: flex;
+  height: 100%;
+  padding-top: 90px;
+}
+.dashboard-container .main-container .left-dashboard-section {
+  width: 21%;
+  background: rgba(255, 255, 255, 0.959);
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+  padding: 40px 0;
+  color: #213f7d;
+  position: relative;
+  font-family: "Work Sans", sans-serif;
+  padding-bottom: 0;
+}
+.dashboard-container .main-container .left-dashboard-section .first-case {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  width: 100%;
+  padding-left: 30px;
+  cursor: pointer;
+}
+.dashboard-container .main-container .left-dashboard-section .first-case p {
+  font-size: 16px;
+  padding: 0 15px;
+  padding-right: 0;
+}
+.dashboard-container .main-container .left-dashboard-section .second-case {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  opacity: 0.6;
+  padding: 0 30px;
+  cursor: pointer;
+}
+.dashboard-container .main-container .left-dashboard-section .second-case p {
+  font-size: 16px;
+  padding: 0 15px;
+}
+.dashboard-container .main-container .left-dashboard-section .parent-case .head {
+  font-size: 12px;
+  font-weight: 500;
+  color: #545f7d;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  padding: 0 30px;
+}
+.dashboard-container .main-container .left-dashboard-section .parent-case .tag-list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px 30px;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.dashboard-container .main-container .left-dashboard-section .parent-case .tag-list.user {
+  background: rgba(57, 205, 204, 0.04);
+  opacity: 1;
+  position: relative;
+}
+.dashboard-container .main-container .left-dashboard-section .parent-case .tag-list.user::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 4px;
+  background: #39cdcc;
+}
+.dashboard-container .main-container .left-dashboard-section .parent-case .tag-list:hover {
+  background: rgba(57, 205, 204, 0.04);
+  opacity: 1;
+  position: relative;
+}
+.dashboard-container .main-container .left-dashboard-section .parent-case .tag-list:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 4px;
+  background: #39cdcc;
+}
+.dashboard-container .main-container .left-dashboard-section .parent-case .tag-list p {
+  font-size: 16px;
+  padding: 0 15px;
+  color: #213f7d;
+}
+.dashboard-container .main-container .left-dashboard-section .parent-case.setting {
+  margin-bottom: 50px;
+}
+.dashboard-container .main-container .left-dashboard-section .end-case {
+  width: 100%;
+  border-top: 1px solid rgba(33, 63, 125, 0.1);
+}
+.dashboard-container .main-container .left-dashboard-section .end-case .logout {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-left: 30px;
+  cursor: pointer;
+  color: #213f7d;
+}
+.dashboard-container .main-container .left-dashboard-section .end-case .logout p {
+  font-size: 16px;
+  padding: 20px 15px;
+}
+.dashboard-container .main-container .left-dashboard-section .end-case .version {
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+  font-size: 12px;
+  font-weight: 400;
+}
+.dashboard-container .main-container .right-dashboard-section {
+  padding: 46px 45px;
+  width: 79%;
+  font-family: "Work Sans", sans-serif;
+  height: 100%;
+  background: #fbfbfb;
+}
+.dashboard-container .main-container .right-dashboard-section .user-container .head {
+  font-size: 24px;
+  font-weight: 500;
+  color: #213f7d;
+}
+.dashboard-container .main-container .right-dashboard-section .user-container .user-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 35px 0;
+}
+.dashboard-container .main-container .right-dashboard-section .user-container .user-details .detail {
+  background: white;
+  padding: 25px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 8px 0px rgba(33, 63, 125, 0.06);
+  width: 100%;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.dashboard-container .main-container .right-dashboard-section .user-container .user-details .detail:last-child {
+  margin: 0;
+}
+.dashboard-container .main-container .right-dashboard-section .user-container .user-details .detail .text {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  color: #545f7d;
+  margin: 5px 0;
+}
+.dashboard-container .main-container .right-dashboard-section .user-container .user-details .detail p {
+  font-weight: 600;
+  font-size: 24px;
+  color: #213f7d;
+}
+.dashboard-container .main-container .right-dashboard-section .table-container {
+  width: 100%;
+  background: white;
+  box-shadow: 0px 0px 8px 0px rgba(33, 63, 125, 0.06);
+}
+.dashboard-container .main-container .right-dashboard-section .table-container table {
+  border-collapse: collapse;
+  width: 100%;
+  color: white;
+  position: relative;
+}
+.dashboard-container .main-container .right-dashboard-section .table-container table thead {
+  width: 100%;
+}
+.dashboard-container .main-container .right-dashboard-section .table-container table thead tr {
+  padding: 20px;
+}
+.dashboard-container .main-container .right-dashboard-section .table-container table thead tr th {
+  cursor: default;
+  color: rgb(235, 235, 235);
+  font-weight: 600;
+  font-size: 12px;
+  color: #545f7d;
+  text-transform: uppercase;
+  position: relative;
+}
+.dashboard-container .main-container .right-dashboard-section .table-container table thead tr th.organiztion {
+  width: 17%;
+}
+.dashboard-container .main-container .right-dashboard-section .table-container table thead tr th.status {
+  width: 15%;
+  padding-left: 15px;
+}
+.dashboard-container .main-container .right-dashboard-section .table-container table thead tr th.phonenumber {
+  width: 15%;
+}
+.dashboard-container .main-container .right-dashboard-section .table-container table thead tr th.username {
+  width: 15%;
+}
+.dashboard-container .main-container .right-dashboard-section .table-container table thead tr th.email {
+  width: 20%;
+}
+.dashboard-container .main-container .right-dashboard-section .table-container table thead tr th.datejoined {
+  width: 15%;
+}
+.dashboard-container .main-container .right-dashboard-section .table-container table thead tr th:first-child {
+  padding: 15px 0;
+  padding-left: 30px;
+}
+.dashboard-container .main-container .right-dashboard-section .table-container table thead tr th:last-child {
+  padding-right: 30px;
+}
+.dashboard-container .main-container .right-dashboard-section .table-container table thead tr th .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.dashboard-container .main-container .right-dashboard-section .table-container table thead tr th .wrap p {
+  cursor: pointer;
+}
+.dashboard-container .main-container .right-dashboard-section .table-container table thead tr th .wrap div {
+  padding-top: 5px;
+}
+.dashboard-container .main-container .right-dashboard-section .table-container table thead tr th .wrap div svg {
+  margin-left: 10px;
+  cursor: pointer;
+}
+.dashboard-container .main-container .right-dashboard-section .table-container table tbody {
+  color: #545f7d;
+}
+.dashboard-container .main-container .right-dashboard-section .table-container table tbody tr {
+  text-transform: capitalize;
+  width: 100%;
+  border-bottom: 1px solid rgba(33, 63, 125, 0.06);
+}
+.dashboard-container .main-container .right-dashboard-section .table-container table tbody tr td {
+  padding: 15px 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+.dashboard-container .main-container .right-dashboard-section .table-container table tbody tr td.status {
+  padding-left: 15px;
+}
+.dashboard-container .main-container .right-dashboard-section .table-container table tbody tr td:first-child {
+  padding-left: 30px;
+}
+.dashboard-container .main-container .right-dashboard-section .table-container table tbody tr td.email {
+  text-transform: lowercase;
+}
+.dashboard-container .main-container .right-dashboard-section .table-container table tbody tr:last-child {
+  border-bottom: none;
+}
+.dashboard-container .main-container .right-dashboard-section .table-container table tbody .status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.dashboard-container .main-container .right-dashboard-section .table-container table tbody .status .status-wrap {
+  margin-right: 15px;
+  padding: 8px 12px;
+  border-radius: 100px;
+  background: rgba(57, 205, 98, 0.06);
+  color: #39cd62;
+}
+.dashboard-container .main-container .right-dashboard-section .table-container table tbody .status .status-wrap.inactive {
+  background: rgba(84, 95, 125, 0.06);
+  color: #545f7d;
+}
+.dashboard-container .main-container .right-dashboard-section .table-container table tbody .status .status-wrap.pending {
+  background: rgba(233, 178, 0, 0.06);
+  color: #e9b200;
+}
+.dashboard-container .main-container .right-dashboard-section .table-container table tbody .status .status-wrap.blacklisted {
+  background: rgba(228, 3, 56, 0.06);
+  color: #e40338;
+}
+.dashboard-container .main-container .right-dashboard-section .table-container table tbody .status svg {
+  cursor: pointer;
+}
+.dashboard-container .main-container .right-dashboard-section .table-container table tbody .status:last-child {
+  padding-right: 30px;
+}
+.dashboard-container .main-container .right-dashboard-section .table-container table tbody .show {
+  display: block;
+}
+.dashboard-container .main-container .right-dashboard-section .users-pagination {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+.dashboard-container .main-container .right-dashboard-section .users-pagination .left-pag {
+  display: flex;
+  align-items: center;
+}
+.dashboard-container .main-container .right-dashboard-section .users-pagination .left-pag p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #545f7d;
+  padding-right: 5px;
+}
+.dashboard-container .main-container .right-dashboard-section .users-pagination .left-pag .stats {
+  display: flex;
+  align-items: center;
+  background: rgba(33, 63, 125, 0.1019607843);
+  padding: 5px;
+  border-radius: 4px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.dashboard-container .main-container .right-dashboard-section .users-pagination .left-pag .stats .no {
+  color: #213f7d;
+  font-weight: 500;
+  font-size: 14px;
+  padding-right: 15px;
+}
+.dashboard-container .main-container .right-dashboard-section .users-pagination .left-pag .custom-select {
+  position: relative;
+  cursor: pointer;
+  width: 50px;
+  margin-right: 5px;
+}
+.dashboard-container .main-container .right-dashboard-section .users-pagination .left-pag .custom-select__selected {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  font-size: 14px;
+  color: #213f7d;
+  font-weight: 500;
+  background: rgba(33, 63, 125, 0.1019607843);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.dashboard-container .main-container .right-dashboard-section .users-pagination .left-pag .custom-select__selected svg {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-75%, -50%);
+}
+.dashboard-container .main-container .right-dashboard-section .users-pagination .left-pag .custom-select__options {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 160px;
+  overflow-y: auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 1;
+  text-align: start;
+}
+.dashboard-container .main-container .right-dashboard-section .users-pagination .left-pag .custom-select__option {
+  padding: 5px;
+  color: #213f7d;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.dashboard-container .main-container .right-dashboard-section .users-pagination .left-pag .custom-select__option:hover {
+  background-color: #f1f1f1;
+}
+.dashboard-container .main-container .right-dashboard-section .users-pagination .left-pag .custom-select.open .custom-select__options {
+  opacity: 1;
+  visibility: visible;
+}
+@media only screen and (max-width: 576px) {
+  .dashboard-container .main-container {
+    position: relative;
+  }
+  .dashboard-container .main-container .left-dashboard-section {
+    position: absolute;
+    z-index: 100;
+    width: 80%;
+    z-index: 90;
+    display: none;
+  }
+  .dashboard-container .main-container .left-dashboard-section.active {
+    display: block;
+  }
+  .dashboard-container .main-container .left-dashboard-section .first-case {
+    position: relative;
+  }
+  .dashboard-container .main-container .left-dashboard-section .first-case .caret-down {
+    margin-left: 20px;
+    position: absolute;
+    right: 5%;
+    top: 10%;
+  }
+  .dashboard-container .main-container .left-dashboard-section .first-case p {
+    font-size: 14px;
+  }
+  .dashboard-container .main-container .left-dashboard-section .second-case p {
+    font-size: 14px;
+  }
+  .dashboard-container .main-container .left-dashboard-section .parent-case .tag-list p {
+    font-size: 14px;
+  }
+  .dashboard-container .main-container .right-dashboard-section {
+    padding: 46px 25px;
+    width: 100%;
+  }
+  .dashboard-container .main-container .right-dashboard-section .user-container .user-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 35px 0;
+    flex-direction: column;
+    width: 100%;
+  }
+  .dashboard-container .main-container .right-dashboard-section .user-container .user-details .detail {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .dashboard-container .main-container .right-dashboard-section .user-container .user-details .detail:last-child {
+    margin: 0;
+  }
+  .dashboard-container .main-container .right-dashboard-section .user-container .user-details .detail .text {
+    font-size: 18px;
+  }
+  .dashboard-container .main-container .right-dashboard-section .table-container {
+    overflow-x: scroll;
+  }
+  .dashboard-container .main-container .right-dashboard-section .table-container table {
+    width: 310%;
+  }
+  .dashboard-container .main-container .right-dashboard-section .table-container table thead tr {
+    padding: 20px;
+  }
+  .dashboard-container .main-container .right-dashboard-section .table-container table thead tr th {
+    cursor: default;
+    color: rgb(235, 235, 235);
+    font-weight: 600;
+    font-size: 12px;
+    color: #545f7d;
+    text-transform: uppercase;
+    position: relative;
+  }
+  .dashboard-container .main-container .right-dashboard-section .table-container table thead tr th.organiztion {
+    width: 20%;
+  }
+  .dashboard-container .main-container .right-dashboard-section .users-pagination {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 30px 0;
+    flex-direction: column;
+  }
+  .dashboard-container .main-container .right-dashboard-section .users-pagination .left-pag {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .dashboard-container .main-container {
+    position: relative;
+  }
+  .dashboard-container .main-container .left-dashboard-section {
+    position: absolute;
+    z-index: 100;
+    width: 50%;
+    z-index: 90;
+    display: none;
+  }
+  .dashboard-container .main-container .left-dashboard-section.active {
+    display: block;
+  }
+  .dashboard-container .main-container .left-dashboard-section .first-case {
+    position: relative;
+  }
+  .dashboard-container .main-container .left-dashboard-section .first-case .caret-down {
+    margin-left: 20px;
+    position: absolute;
+    right: 5%;
+    top: 10%;
+  }
+  .dashboard-container .main-container .right-dashboard-section {
+    padding: 46px 25px;
+    width: 100%;
+  }
+  .dashboard-container .main-container .right-dashboard-section .user-container .user-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 35px 0;
+    flex-direction: column;
+    width: 100%;
+  }
+  .dashboard-container .main-container .right-dashboard-section .user-container .user-details .detail {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .dashboard-container .main-container .right-dashboard-section .user-container .user-details .detail:last-child {
+    margin: 0;
+  }
+  .dashboard-container .main-container .right-dashboard-section .user-container .user-details .detail .text {
+    font-size: 18px;
+  }
+  .dashboard-container .main-container .right-dashboard-section .table-container {
+    overflow-x: scroll;
+  }
+  .dashboard-container .main-container .right-dashboard-section .table-container table {
+    width: 150%;
+  }
+  .dashboard-container .main-container .right-dashboard-section .table-container table thead tr {
+    padding: 20px;
+  }
+  .dashboard-container .main-container .right-dashboard-section .table-container table thead tr th {
+    cursor: default;
+    color: rgb(235, 235, 235);
+    font-weight: 600;
+    font-size: 12px;
+    color: #545f7d;
+    text-transform: uppercase;
+    position: relative;
+  }
+  .dashboard-container .main-container .right-dashboard-section .table-container table thead tr th.organiztion {
+    width: 20%;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .dashboard-container .main-container {
+    position: relative;
+  }
+  .dashboard-container .main-container .left-dashboard-section {
+    position: absolute;
+    z-index: 90;
+    width: 50%;
+    display: none;
+  }
+  .dashboard-container .main-container .left-dashboard-section.active {
+    display: block;
+  }
+  .dashboard-container .main-container .left-dashboard-section .first-case {
+    position: relative;
+  }
+  .dashboard-container .main-container .left-dashboard-section .first-case .caret-down {
+    margin-left: 20px;
+    position: absolute;
+    right: 5%;
+    top: 10%;
+  }
+  .dashboard-container .main-container .right-dashboard-section {
+    padding: 46px 25px;
+    width: 100%;
+  }
+  .dashboard-container .main-container .right-dashboard-section .user-container .user-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 35px 0;
+    flex-direction: column;
+    width: 100%;
+  }
+  .dashboard-container .main-container .right-dashboard-section .user-container .user-details .detail {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .dashboard-container .main-container .right-dashboard-section .user-container .user-details .detail:last-child {
+    margin: 0;
+  }
+  .dashboard-container .main-container .right-dashboard-section .user-container .user-details .detail .text {
+    font-size: 18px;
+  }
+  .dashboard-container .main-container .right-dashboard-section .table-container {
+    overflow-x: scroll;
+  }
+  .dashboard-container .main-container .right-dashboard-section .table-container table {
+    width: 150%;
+  }
+  .dashboard-container .main-container .right-dashboard-section .table-container table thead tr {
+    padding: 20px;
+  }
+  .dashboard-container .main-container .right-dashboard-section .table-container table thead tr th {
+    cursor: default;
+    color: rgb(235, 235, 235);
+    font-weight: 600;
+    font-size: 12px;
+    color: #545f7d;
+    text-transform: uppercase;
+    position: relative;
+  }
+  .dashboard-container .main-container .right-dashboard-section .table-container table thead tr th.organiztion {
+    width: 20%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .dashboard-container .main-container {
+    height: 100%;
+  }
+  .dashboard-container .main-container .left-dashboard-section .first-case .caret-down {
+    margin-right: 20px;
+  }
+  .dashboard-container .main-container .right-dashboard-section {
+    padding: 46px 25px;
+  }
+  .dashboard-container .main-container .right-dashboard-section .user-container .user-details {
+    display: flex;
+    margin: 35px 0;
+    flex-direction: column;
+    width: 100%;
+  }
+  .dashboard-container .main-container .right-dashboard-section .user-container .user-details .detail {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .dashboard-container .main-container .right-dashboard-section .user-container .user-details .detail:last-child {
+    margin: 0;
+  }
+  .dashboard-container .main-container .right-dashboard-section .user-container .user-details .detail .text {
+    font-size: 18px;
+  }
+  .dashboard-container .main-container .right-dashboard-section .table-container {
+    overflow-x: scroll;
+  }
+  .dashboard-container .main-container .right-dashboard-section .table-container table {
+    width: 150%;
+  }
+  .dashboard-container .main-container .right-dashboard-section .table-container table thead tr {
+    padding: 20px;
+  }
+  .dashboard-container .main-container .right-dashboard-section .table-container table thead tr th {
+    cursor: default;
+    color: rgb(235, 235, 235);
+    font-weight: 600;
+    font-size: 12px;
+    color: #545f7d;
+    text-transform: uppercase;
+    position: relative;
+  }
+  .dashboard-container .main-container .right-dashboard-section .table-container table thead tr th.organiztion {
+    width: 20%;
+  }
+  .dashboard-container .main-container .right-dashboard-section .table-container table thead tr th.status {
+    width: 15%;
+    padding-left: 15px;
+  }
+  .dashboard-container .main-container .right-dashboard-section .table-container table thead tr th.phonenumber {
+    width: 15%;
+  }
+  .dashboard-container .main-container .right-dashboard-section .table-container table thead tr th.username {
+    width: 15%;
+  }
+  .dashboard-container .main-container .right-dashboard-section .table-container table thead tr th.email {
+    width: 20%;
+  }
+  .dashboard-container .main-container .right-dashboard-section .table-container table thead tr th.datejoined {
+    width: 15%;
+  }
+  .dashboard-container .main-container .right-dashboard-section .table-container table thead tr th:first-child {
+    padding: 15px 0;
+    padding-left: 30px;
+  }
+  .dashboard-container .main-container .right-dashboard-section .table-container table thead tr th:last-child {
+    padding-right: 30px;
+  }
+  .dashboard-container .main-container .right-dashboard-section .table-container table thead tr th .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .dashboard-container .main-container .right-dashboard-section .table-container table thead tr th .wrap p {
+    cursor: pointer;
+  }
+  .dashboard-container .main-container .right-dashboard-section .table-container table thead tr th .wrap div {
+    padding-top: 5px;
+  }
+  .dashboard-container .main-container .right-dashboard-section .table-container table thead tr th .wrap div svg {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .dashboard-container .main-container .left-dashboard-section .first-case {
+    position: relative;
+  }
+  .dashboard-container .main-container .left-dashboard-section .first-case .caret-down {
+    margin-left: 10px;
+  }
+}/*# sourceMappingURL=Dashboard.css.map */

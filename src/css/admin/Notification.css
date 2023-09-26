@@ -1,0 +1,77 @@
+.notification-section .notification-container {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.notification-section .notification-container .container-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.notification-section .notification-container .container-header h1 {
+  font-weight: 600;
+  font-size: 24px;
+}
+.notification-section .notification-container .container-header button {
+  font-family: inherit;
+  border: none;
+  padding: 10px 12px;
+  outline: none;
+  border-radius: 50px;
+  background: rgb(255, 235, 108);
+  color: white;
+  cursor: pointer;
+}
+.notification-section .notification-container .container {
+  max-height: 450px;
+  overflow: auto;
+}
+.notification-section .notification-container .container .notification {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0px 0px 8px 0px rgba(33, 63, 125, 0.06);
+  font-size: 13px;
+}
+.notification-section .notification-container .container .notification p span {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.notification-section .notification-container .container .notification a {
+  color: rgb(240, 220, 0);
+}
+.notification-section .notification-container .no-notificatoion {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.notification-section .notification-container .no-notificatoion svg {
+  font-size: 98px;
+  color: rgb(255, 235, 108);
+  margin-bottom: 30px;
+}
+.notification-section .notification-container .no-notificatoion h1 {
+  font-weight: 500;
+}
+@media only screen and (max-width: 576px) {
+  .notification-section .container .notification p {
+    font-size: 12px;
+  }
+  .notification-section .container .notification p span {
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .notification-section .container .notification a {
+    font-size: 12px;
+    color: rgb(240, 220, 0);
+    margin-left: 40px;
+  }
+}/*# sourceMappingURL=Notification.css.map */

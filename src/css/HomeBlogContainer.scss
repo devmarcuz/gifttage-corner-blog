@@ -1,0 +1,542 @@
+.home-blog-container {
+  flex: 0.6;
+  padding-right: 20px;
+  transition: 0.3s all ease-in-out;
+
+  .search-results {
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(241, 241, 241);
+    margin-bottom: 20px;
+
+    h1 {
+      font-family: "Cormorant Garamond", serif;
+      font-weight: 400;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 26px;
+    }
+
+    p {
+      font-family: poppins;
+      padding-top: 15px;
+      font-size: 13px;
+    }
+
+    .search-container {
+      width: 100%;
+      display: none;
+      align-items: center;
+      justify-content: flex-end;
+      padding-top: 15px;
+
+      .search {
+        width: 100%;
+        height: 45px;
+        overflow: hidden;
+
+        input {
+          width: 90%;
+          padding: 10px;
+          border: none;
+          background: rgb(247, 247, 247);
+          font-family: "Work Sans", sans-serif;
+          font-size: 13px;
+          height: 100%;
+
+          &::placeholder {
+            letter-spacing: 2px;
+            color: rgb(148, 148, 148);
+          }
+        }
+
+        button {
+          width: 10%;
+          height: 100%;
+          border: none;
+          background: rgb(255, 235, 121);
+          cursor: pointer;
+          overflow: hidden;
+
+          svg {
+            text-align: center;
+            color: white;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .posts {
+    width: 100%;
+
+    .post {
+      .categorie {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-family: "Work Sans", sans-serif;
+        letter-spacing: 1px;
+        font-weight: 500;
+
+        span {
+          // margin-right: 15px;
+          padding: 0 15px;
+          position: relative;
+
+          &::before {
+            content: "";
+            position: absolute;
+            background: black;
+            width: 3px;
+            height: 3px;
+            border-radius: 50%;
+            left: 0%;
+            bottom: 50%;
+          }
+
+          &:first-child {
+            // background: blue;
+            padding-left: 0;
+            padding-right: 10px;
+
+            &::before {
+              position: absolute;
+              background: black;
+              width: 0;
+              height: 0;
+            }
+          }
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          a {
+            color: black;
+
+            &:hover {
+              color: rgb(196, 180, 88);
+            }
+          }
+        }
+      }
+
+      h1 {
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 26px;
+        padding: 15px 0;
+        transition: 0.2s all ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+          color: rgb(196, 180, 88);
+        }
+      }
+
+      .dates {
+        width: 100%;
+        text-align: center;
+        font-family: "Work Sans", sans-serif;
+        font-size: 12px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+
+        span {
+          color: rgb(196, 180, 88);
+          transition: 0.3s all ease-in-out;
+          cursor: pointer;
+
+          &:hover {
+            color: black;
+          }
+        }
+      }
+
+      .img {
+        height: 400px;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        cursor: pointer;
+
+        a {
+          width: 100%;
+          height: 100%;
+
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+
+      .content {
+        font-size: 13px;
+        font-family: poppins;
+
+        a {
+          color: black;
+
+          &:hover {
+            color: rgb(228, 209, 105);
+          }
+        }
+      }
+
+      .footer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px 0;
+
+        .socials {
+          display: flex;
+
+          svg {
+            margin-right: 15px;
+            font-size: 18px;
+            color: black;
+
+            &:hover {
+              color: rgb(228, 209, 105);
+            }
+          }
+        }
+
+        .end {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          flex: 1;
+
+          .border {
+            width: 70%;
+            height: 1px;
+            background: rgb(241, 241, 241);
+          }
+
+          a {
+            color: rgb(196, 180, 88);
+            padding: 10px 0;
+            font-size: 12px;
+            border: 2px solid rgb(241, 241, 241);
+            width: 30%;
+            text-align: center;
+            font-family: "Work Sans", sans-serif;
+            transition: 0.2s all ease-in-out;
+
+            &:hover {
+              border-color: rgb(196, 180, 88);
+              color: black;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.dark-mode {
+    .posts {
+      width: 100%;
+
+      .post {
+        .categorie {
+          span {
+            // margin-right: 15px;
+            padding: 0 15px;
+            position: relative;
+
+            &::before {
+              content: "";
+              position: absolute;
+              background: rgba(255, 255, 255, 0.253);
+              width: 3px;
+              height: 3px;
+              border-radius: 50%;
+              left: 0%;
+              bottom: 50%;
+            }
+
+            &:first-child {
+              padding-left: 0;
+              padding-right: 10px;
+
+              &::before {
+                position: absolute;
+                background: black;
+                width: 0;
+                height: 0;
+              }
+            }
+
+            &:last-child {
+              margin-right: 0;
+            }
+
+            a {
+              color: rgba(255, 255, 255, 0.897);
+
+              &:hover {
+                color: rgb(196, 180, 88);
+              }
+            }
+          }
+        }
+
+        h1 {
+          color: rgb(196, 180, 88);
+
+          &:hover {
+            color: rgb(255, 245, 187);
+          }
+        }
+
+        .dates {
+          color: white;
+          span {
+            color: rgb(196, 180, 88);
+            transition: 0.3s all ease-in-out;
+            cursor: pointer;
+
+            &:hover {
+              color: white;
+            }
+          }
+        }
+
+        .content {
+          color: white;
+
+          a {
+            color: white;
+
+            &:hover {
+              color: rgb(228, 209, 105);
+            }
+          }
+        }
+
+        .footer {
+          .socials {
+            display: flex;
+
+            svg {
+              margin-right: 15px;
+              font-size: 18px;
+              color: white;
+
+              &:hover {
+                color: rgb(228, 209, 105);
+              }
+            }
+          }
+
+          .end {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex: 1;
+
+            .border {
+              width: 70%;
+              height: 1px;
+              background: rgba(255, 255, 255, 0.13);
+            }
+
+            a {
+              color: rgb(196, 180, 88);
+              padding: 10px 0;
+              font-size: 12px;
+              border: 2px solid rgba(255, 255, 255, 0.13);
+              width: 30%;
+              text-align: center;
+              font-family: "Work Sans", sans-serif;
+              transition: 0.2s all ease-in-out;
+
+              &:hover {
+                border-color: rgb(196, 180, 88);
+                color: white;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .search-results {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+
+      h1 {
+        color: white;
+      }
+
+      p {
+        color: white;
+      }
+
+      .search-container {
+        .search {
+          input {
+            background: rgba(247, 247, 247, 0.027);
+            color: white;
+
+            &::placeholder {
+              letter-spacing: 2px;
+              color: rgba(148, 148, 148, 0.541);
+            }
+          }
+
+          button {
+            background: rgb(143, 123, 12);
+          }
+        }
+      }
+    }
+  }
+
+  // Extra small devices (portrait phones)
+  @media only screen and (max-width: 576px) {
+    & {
+      padding: 0;
+      flex: 0.2;
+
+      .search-results {
+        .search-container {
+          display: flex;
+
+          .search {
+            input {
+              width: 80%;
+            }
+
+            button {
+              width: 20%;
+            }
+          }
+        }
+      }
+
+      .posts {
+        .post {
+          .categorie {
+            font-size: 11px;
+          }
+
+          h1 {
+            width: 100%;
+            font-size: 23px;
+          }
+
+          .dates {
+            font-size: 11px;
+          }
+
+          .footer {
+            .end {
+              .border {
+                flex: 0.4;
+              }
+
+              a {
+                flex: 0.6;
+                font-size: 11px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Small devices (landscape phones)
+  @media only screen and (min-width: 576px) and (max-width: 768px) {
+    & {
+      .posts {
+        .post {
+          h1 {
+            width: 95%;
+          }
+
+          .footer {
+            .end {
+              .border {
+                width: 60%;
+              }
+
+              a {
+                width: 40%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Extra small devices (portrait phones)
+  @media only screen and (max-width: 576px) {
+    & {
+      .posts {
+        .post {
+          h1 {
+            width: 95%;
+          }
+
+          .footer {
+            .end {
+              .border {
+                width: 60%;
+              }
+
+              a {
+                width: 40%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Medium devices (tablets)
+  @media only screen and (min-width: 769px) and (max-width: 992px) {
+    & {
+      .posts {
+        .post {
+          h1 {
+            width: 95%;
+          }
+
+          .footer {
+            .end {
+              .border {
+                width: 60%;
+              }
+
+              a {
+                width: 40%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Large devices (desktops)
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+  }
+
+  // Extra large devices (large desktops)
+  @media only screen and (min-width: 1200px) {
+  }
+}

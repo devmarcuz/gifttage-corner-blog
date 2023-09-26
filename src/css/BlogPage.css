@@ -1,0 +1,419 @@
+.blog-page-container .blog-page-section {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto;
+  margin-bottom: 100px;
+}
+.blog-page-container .blog-page-section .post {
+  width: 100%;
+}
+.blog-page-container .blog-page-section .post .categorie {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: "Work Sans", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.blog-page-container .blog-page-section .post .categorie span {
+  padding: 0 15px;
+  position: relative;
+}
+.blog-page-container .blog-page-section .post .categorie span::before {
+  content: "";
+  position: absolute;
+  background: black;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  left: 0%;
+  bottom: 50%;
+}
+.blog-page-container .blog-page-section .post .categorie span:first-child {
+  padding-left: 0;
+  padding-right: 10px;
+}
+.blog-page-container .blog-page-section .post .categorie span:first-child::before {
+  position: absolute;
+  background: black;
+  width: 0;
+  height: 0;
+}
+.blog-page-container .blog-page-section .post .categorie span:last-child {
+  margin-right: 0;
+}
+.blog-page-container .blog-page-section .post .categorie span a {
+  color: black;
+}
+.blog-page-container .blog-page-section .post .categorie span a:hover {
+  color: rgb(196, 180, 88);
+}
+.blog-page-container .blog-page-section .post h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 26px;
+  padding: 15px 0;
+}
+.blog-page-container .blog-page-section .post .dates {
+  width: 100%;
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.blog-page-container .blog-page-section .post .dates span {
+  color: rgb(196, 180, 88);
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
+}
+.blog-page-container .blog-page-section .post .dates span:hover {
+  color: black;
+}
+.blog-page-container .blog-page-section .post .content {
+  margin-top: 20px;
+  font-size: 13px;
+  font-family: poppins;
+  margin-bottom: 20px;
+}
+.blog-page-container .blog-page-section .post .content a {
+  color: black;
+  position: relative;
+  height: 17px;
+  z-index: 10;
+  transition: 0.3s all ease-in-out;
+}
+.blog-page-container .blog-page-section .post .content a::after {
+  content: "";
+  position: absolute;
+  bottom: -5%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: rgb(221, 170, 31);
+  transition: 0.3s all ease-in-out;
+  transform-origin: top;
+}
+.blog-page-container .blog-page-section .post .content a:hover {
+  color: white;
+}
+.blog-page-container .blog-page-section .post .content a:hover::after {
+  height: 100%;
+  z-index: -10;
+}
+.blog-page-container .blog-page-section .post .content p img {
+  height: 800px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  align-self: flex-start;
+  justify-self: flex-start;
+}
+.blog-page-container .blog-page-section .post .content p:first-child img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 600px;
+}
+.blog-page-container .blog-page-section .post .content ul {
+  list-style-type: disc;
+}
+.blog-page-container .blog-page-section .post .share-post {
+  margin-bottom: 50px;
+}
+.blog-page-container .blog-page-section .post .share-post p {
+  font-size: 15px;
+  font-family: poppins;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.blog-page-container .blog-page-section .post .share-post .socials a {
+  color: black;
+  background: rgb(255, 235, 121);
+  padding: 5px 8px;
+  border-radius: 50%;
+  margin-right: 20px;
+  transition: 0.2s all ease-in-out;
+}
+.blog-page-container .blog-page-section .post .share-post .socials a:hover {
+  color: rgb(255, 235, 121);
+  background: black;
+}
+.blog-page-container .blog-page-section .post .similar-posts p {
+  font-size: 15px;
+  font-family: poppins;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.blog-page-container .blog-page-section .post .similar-posts .similar-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.blog-page-container .blog-page-section .post .similar-posts .similar-container .similar-post {
+  flex: 1;
+  color: black;
+}
+.blog-page-container .blog-page-section .post .similar-posts .similar-container .similar-post .date {
+  font-size: 13px;
+  font-family: "Work Sans", sans-serif;
+  text-transform: uppercase;
+  color: rgb(192, 131, 52);
+}
+.blog-page-container .blog-page-section .post .similar-posts .similar-container .similar-post img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 5px 0;
+}
+.blog-page-container .blog-page-section .post .similar-posts .similar-container .similar-post .title {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+}
+.blog-page-container .blog-page-section .post .similar-posts .similar-container .similar-post:nth-child(2) {
+  margin: 0 30px;
+}
+.blog-page-container.dark-mode .blog-page-section {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto;
+  margin-bottom: 100px;
+}
+.blog-page-container.dark-mode .blog-page-section .post .categorie span {
+  padding: 0 15px;
+  position: relative;
+}
+.blog-page-container.dark-mode .blog-page-section .post .categorie span::before {
+  content: "";
+  position: absolute;
+  background: rgba(255, 255, 255, 0.253);
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  left: 0%;
+  bottom: 50%;
+}
+.blog-page-container.dark-mode .blog-page-section .post .categorie span:first-child {
+  padding-left: 0;
+  padding-right: 10px;
+}
+.blog-page-container.dark-mode .blog-page-section .post .categorie span:first-child::before {
+  position: absolute;
+  background: black;
+  width: 0;
+  height: 0;
+}
+.blog-page-container.dark-mode .blog-page-section .post .categorie span:last-child {
+  margin-right: 0;
+}
+.blog-page-container.dark-mode .blog-page-section .post .categorie span a {
+  color: rgba(255, 255, 255, 0.897);
+}
+.blog-page-container.dark-mode .blog-page-section .post .categorie span a:hover {
+  color: rgb(196, 180, 88);
+}
+.blog-page-container.dark-mode .blog-page-section .post h1 {
+  color: rgb(196, 180, 88);
+}
+.blog-page-container.dark-mode .blog-page-section .post .dates {
+  color: white;
+}
+.blog-page-container.dark-mode .blog-page-section .post .dates span {
+  color: rgb(196, 180, 88);
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
+}
+.blog-page-container.dark-mode .blog-page-section .post .dates span:hover {
+  color: white;
+}
+.blog-page-container.dark-mode .blog-page-section .post .content {
+  color: white;
+}
+.blog-page-container.dark-mode .blog-page-section .post .content a {
+  color: white;
+}
+.blog-page-container.dark-mode .blog-page-section .post .content a:hover {
+  color: rgb(228, 209, 105);
+}
+.blog-page-container.dark-mode .blog-page-section .post .share-post p {
+  color: white;
+}
+.blog-page-container.dark-mode .blog-page-section .post .similar-posts p {
+  color: white;
+}
+.blog-page-container.dark-mode .blog-page-section .post .similar-posts .similar-container .similar-post {
+  flex: 1;
+}
+.blog-page-container.dark-mode .blog-page-section .post .similar-posts .similar-container .similar-post .title {
+  color: white;
+}
+.blog-page-container.dark-mode .blog-page-section .post .similar-posts .similar-container .similar-post:nth-child(2) {
+  margin: 0 30px;
+}
+@media only screen and (max-width: 576px) {
+  .blog-page-container .blog-page-section {
+    width: 90%;
+  }
+  .blog-page-container .blog-page-section .post .categorie {
+    font-size: 11px;
+  }
+  .blog-page-container .blog-page-section .post h1 {
+    width: 95%;
+    font-size: 23px;
+  }
+  .blog-page-container .blog-page-section .post .dates {
+    font-size: 11px;
+  }
+  .blog-page-container .blog-page-section .post .img {
+    height: 200px;
+  }
+  .blog-page-container .blog-page-section .post .content p img {
+    height: 400px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top;
+       object-position: top;
+  }
+  .blog-page-container .blog-page-section .post .content p:first-child img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 300px;
+  }
+  .blog-page-container .blog-page-section .post .share-post .socials {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .blog-page-container .blog-page-section .post .share-post .socials a {
+    margin-bottom: 10px;
+  }
+  .blog-page-container .blog-page-section .post .similar-posts p {
+    margin-bottom: 10px;
+  }
+  .blog-page-container .blog-page-section .post .similar-posts .similar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .blog-page-container .blog-page-section .post .similar-posts .similar-container .similar-post {
+    width: 70%;
+    margin-bottom: 15px;
+  }
+  .blog-page-container .blog-page-section .post .similar-posts .similar-container .similar-post .date {
+    font-size: 11px;
+  }
+  .blog-page-container .blog-page-section .post .similar-posts .similar-container .similar-post img {
+    height: 150px;
+  }
+  .blog-page-container .blog-page-section .post .similar-posts .similar-container .similar-post .title {
+    font-size: 13px;
+  }
+  .blog-page-container .blog-page-section .post .similar-posts .similar-container .similar-post:nth-child(2) {
+    margin: 0;
+    margin-bottom: 15px;
+  }
+  .blog-page-container.dark-mode .blog-page-section {
+    width: 90%;
+  }
+  .blog-page-container.dark-mode .blog-page-section .post .categorie {
+    font-size: 11px;
+  }
+  .blog-page-container.dark-mode .blog-page-section .post h1 {
+    width: 95%;
+    font-size: 23px;
+  }
+  .blog-page-container.dark-mode .blog-page-section .post .dates {
+    font-size: 11px;
+  }
+  .blog-page-container.dark-mode .blog-page-section .post .img {
+    height: 200px;
+  }
+  .blog-page-container.dark-mode .blog-page-section .post .share-post .socials {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .blog-page-container.dark-mode .blog-page-section .post .share-post .socials a {
+    margin-bottom: 10px;
+  }
+  .blog-page-container.dark-mode .blog-page-section .post .similar-posts p {
+    margin-bottom: 10px;
+  }
+  .blog-page-container.dark-mode .blog-page-section .post .similar-posts .similar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .blog-page-container.dark-mode .blog-page-section .post .similar-posts .similar-container .similar-post {
+    width: 70%;
+    margin-bottom: 15px;
+  }
+  .blog-page-container.dark-mode .blog-page-section .post .similar-posts .similar-container .similar-post .date {
+    font-size: 11px;
+  }
+  .blog-page-container.dark-mode .blog-page-section .post .similar-posts .similar-container .similar-post img {
+    height: 150px;
+  }
+  .blog-page-container.dark-mode .blog-page-section .post .similar-posts .similar-container .similar-post .title {
+    font-size: 13px;
+  }
+  .blog-page-container.dark-mode .blog-page-section .post .similar-posts .similar-container .similar-post:nth-child(2) {
+    margin: 0;
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .blog-page-container .blog-page-section {
+    width: 90%;
+  }
+  .blog-page-container .blog-page-section .post .content p img {
+    height: 750px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    -o-object-position: top;
+       object-position: top;
+  }
+  .blog-page-container .blog-page-section .post .content p:first-child img {
+    height: 500px;
+  }
+  .blog-page-container.dark-mode .blog-page-section {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .blog-page-container .blog-page-section {
+    width: 90%;
+  }
+  .blog-page-container .blog-page-section .post .content p img {
+    height: 800px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    -o-object-position: top;
+       object-position: top;
+  }
+  .blog-page-container .blog-page-section .post .content p:first-child img {
+    height: 500px;
+  }
+  .blog-page-container.dark-mode .blog-page-section {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .blog-page-container .blog-page-section {
+    width: 90%;
+  }
+  .blog-page-container.dark-mode .blog-page-section {
+    width: 90%;
+  }
+}/*# sourceMappingURL=BlogPage.css.map */

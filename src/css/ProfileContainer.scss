@@ -1,0 +1,378 @@
+.profile-container {
+  flex: 0.4;
+  font-family: "Work Sans", sans-serif;
+
+  .search-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .search {
+      width: 90%;
+      height: 45px;
+      overflow: hidden;
+
+      input {
+        width: 80%;
+        padding: 10px;
+        border: none;
+        background: rgb(247, 247, 247);
+        font-family: "Work Sans", sans-serif;
+        font-size: 13px;
+        height: 100%;
+
+        &::placeholder {
+          letter-spacing: 2px;
+          color: rgb(148, 148, 148);
+        }
+      }
+
+      button {
+        width: 20%;
+        height: 100%;
+        border: none;
+        background: rgb(255, 235, 121);
+        cursor: pointer;
+        overflow: hidden;
+
+        svg {
+          text-align: center;
+          color: white;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .profile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 80px;
+
+    img {
+      width: 90%;
+      object-fit: cover;
+      height: 350px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      text-align: center;
+      font-family: poppins;
+      width: 90%;
+      font-size: 13px;
+    }
+
+    h1 {
+      width: 90%;
+      font-family: "Allura", cursive;
+      text-align: center;
+      padding-top: 30px;
+      font-size: 45px;
+      transform: scale(1.2);
+      // font-family: "Pacifico", cursive;
+    }
+  }
+
+  .newsletter {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    form {
+      width: 90%;
+      background: rgb(255, 235, 121);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 25px;
+
+      h1 {
+        color: white;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 29px;
+        font-family: "Cormorant Garamond", serif;
+      }
+
+      p {
+        font-family: poppins;
+        margin-top: 30px;
+        color: rgb(247, 141, 114);
+        font-size: 13px;
+      }
+
+      input {
+        margin-top: 15px;
+        background: none;
+        padding-bottom: 8px;
+        border: none;
+        border-bottom: 1px solid white;
+        color: white;
+        font-family: "Work Sans", sans-serif;
+        font-size: 13px;
+        font-weight: 300;
+        width: 100%;
+
+        &::placeholder {
+          color: white;
+        }
+      }
+
+      button {
+        margin-top: 15px;
+        background: rgb(247, 162, 114);
+        border: none;
+        cursor: pointer;
+        padding: 10px 15px;
+        font-family: "Work Sans", sans-serif;
+        text-transform: uppercase;
+        border-radius: 50px;
+        color: white;
+        transition: 0.2s all ease-in-out;
+
+        &:hover {
+          background: black;
+        }
+      }
+    }
+  }
+
+  .post-container {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    .content {
+      width: 90%;
+
+      .title {
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+        background: rgb(255, 235, 121);
+        text-transform: uppercase;
+        color: white;
+        font-weight: 500;
+        font-size: 15px;
+      }
+
+      .posts {
+        margin-top: 18px;
+        width: 100%;
+        border-bottom: 1px solid rgb(218, 218, 218);
+        padding-bottom: 10px;
+
+        a {
+          color: black;
+          width: 100%;
+          font-size: 14px;
+          transition: 0.3s all ease-in-out;
+
+          &:hover {
+            color: rgb(228, 209, 105);
+          }
+        }
+      }
+
+      .socials {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 20px;
+
+        a {
+          color: black;
+          font-size: 20px;
+          transition: 0.3s all ease-in-out;
+
+          &:hover {
+            color: rgb(228, 209, 105);
+          }
+        }
+      }
+    }
+  }
+
+  &.dark-mode {
+    .search-container {
+      .search {
+        input {
+          background: rgba(247, 247, 247, 0.027);
+          color: white;
+
+          &::placeholder {
+            letter-spacing: 2px;
+            color: rgba(148, 148, 148, 0.541);
+          }
+        }
+
+        button {
+          background: rgb(143, 123, 12);
+        }
+      }
+    }
+
+    .profile {
+      p {
+        color: white;
+      }
+
+      h1 {
+        color: white;
+      }
+    }
+
+    .newsletter {
+      form {
+        background: rgb(143, 123, 12);
+
+        input {
+          border-bottom: 1px solid rgba(255, 255, 255, 0.651);
+          color: rgba(255, 255, 255, 0.651);
+
+          &::placeholder {
+            color: rgba(255, 255, 255, 0.651);
+          }
+        }
+
+        button {
+          background: rgb(180, 68, 3);
+
+          &:hover {
+            background: black;
+          }
+        }
+      }
+    }
+
+    .post-container {
+      .content {
+        .title {
+          background: rgb(143, 123, 12);
+        }
+
+        .posts {
+          border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+
+          a {
+            color: white;
+
+            &:hover {
+              color: rgb(228, 209, 105);
+            }
+          }
+        }
+
+        .socials {
+          a {
+            color: white;
+
+            &:hover {
+              color: rgb(228, 209, 105);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Extra small devices (portrait phones)
+  @media only screen and (max-width: 576px) {
+    & {
+      flex: 1;
+      width: 100%;
+      overflow-x: hidden;
+
+      .search-container {
+        margin-top: 50px;
+        .search {
+          width: 100%;
+        }
+      }
+
+      .profile {
+        img {
+          width: 100%;
+        }
+
+        p {
+          width: 100%;
+        }
+
+        h1 {
+          width: 100%;
+          font-family: "Allura", cursive;
+        }
+      }
+
+      .newsletter {
+        form {
+          width: 100%;
+          h1 {
+            font-size: 25px;
+          }
+        }
+      }
+
+      .post-container {
+        .content {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  // Small devices (landscape phones)
+  @media only screen and (min-width: 576px) and (max-width: 768px) {
+    & {
+      .newsletter {
+        form {
+          h1 {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
+
+  // Medium devices (tablets)
+  @media only screen and (min-width: 769px) and (max-width: 992px) {
+    & {
+      .newsletter {
+        form {
+          h1 {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
+
+  // Large devices (desktops)
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    & {
+      .newsletter {
+        form {
+          h1 {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
+
+  // Extra large devices (large desktops)
+  @media only screen and (min-width: 1200px) {
+  }
+}

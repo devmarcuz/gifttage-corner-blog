@@ -1,0 +1,219 @@
+main {
+  height: 100vh;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+}
+main .left-login-container {
+  flex: 0.55;
+  background: #fbfbfb;
+  height: 100%;
+  padding-left: 70px;
+  overflow: hidden;
+}
+main .left-login-container header {
+  line-height: 25vh;
+  width: 100%;
+  display: flex;
+}
+main .left-login-container header .img {
+  color: none;
+  padding: 0;
+}
+main .right-login-container {
+  flex: 0.45;
+  height: 100%;
+  overflow: hidden;
+}
+main .right-login-container header {
+  line-height: 25vh;
+  width: 100%;
+  display: none;
+}
+main .right-login-container header .img {
+  color: none;
+  padding: 0;
+}
+main .right-login-container .space {
+  width: 100%;
+  line-height: 25vh;
+  color: white;
+  pointer-events: none;
+}
+main .right-login-container .right-section {
+  display: flex;
+  flex-direction: column;
+  padding-left: 80px;
+  padding-right: 0;
+  background: white;
+  height: 100%;
+  padding-right: 100px;
+  width: 100%;
+}
+main .right-login-container .right-section h3 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #213f7d;
+}
+main .right-login-container .right-section p {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(84, 95, 125);
+  padding-top: 5px;
+  padding-bottom: 50px;
+}
+main .right-login-container .right-section form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+main .right-login-container .right-section form .error-message {
+  position: absolute;
+  top: -10%;
+  left: 0;
+  width: 100%;
+  background-color: rgba(216, 104, 104, 0.0941176471);
+  color: rgba(216, 104, 104, 0.662745098);
+  padding: 10px;
+  text-align: start;
+  transition: top 0.3s ease-in-out;
+  font-size: 13px;
+  border-radius: 4px;
+  display: none;
+}
+main .right-login-container .right-section form.error .error-message {
+  top: -22%;
+  display: inherit;
+}
+main .right-login-container .right-section form input {
+  height: 50px;
+  color: #545f7d;
+}
+main .right-login-container .right-section form input::-moz-placeholder {
+  opacity: 60%;
+}
+main .right-login-container .right-section form input::placeholder {
+  opacity: 60%;
+}
+main .right-login-container .right-section form input.email {
+  padding: 10px 8px;
+  border-radius: 5px;
+  border: 2px solid rgba(84, 95, 125, 0.15);
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(84, 95, 125);
+  font-family: inherit;
+}
+main .right-login-container .right-section form .input-password {
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+  height: 50px;
+}
+main .right-login-container .right-section form .input-password input {
+  height: 100%;
+  border-radius: 5px;
+  width: 100%;
+  background: none;
+  padding: 10px 8px;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(84, 95, 125);
+  font-family: inherit;
+  border: 2px solid rgba(84, 95, 125, 0.15);
+}
+main .right-login-container .right-section form .input-password span {
+  position: absolute;
+  top: 50%;
+  left: 95%;
+  transform: translate(-95%, -50%);
+  font-size: 12px;
+  color: #39cdcc;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+main .right-login-container .right-section form a {
+  color: #39cdcc;
+  font-family: "Prompt", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+main .right-login-container .right-section form button {
+  font-family: inherit;
+  background: #39cdcc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 576px) {
+  main .left-login-container {
+    display: none;
+  }
+  main .right-login-container {
+    padding: 0px;
+    flex: 1;
+  }
+  main .right-login-container header {
+    display: flex;
+    line-height: 15vh;
+    padding: 0 20px;
+  }
+  main .right-login-container header .img {
+    color: none;
+  }
+  main .right-login-container .space {
+    display: none;
+  }
+  main .right-login-container .right-section {
+    padding: 0 50px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+  main .left-login-container {
+    display: none;
+  }
+  main .right-login-container {
+    padding: 0px;
+    flex: 1;
+  }
+  main .right-login-container header {
+    display: flex;
+    line-height: 15vh;
+    padding: 0 20px;
+  }
+  main .right-login-container header .img {
+    color: none;
+  }
+  main .right-login-container .space {
+    display: none;
+  }
+  main .right-login-container .right-section {
+    padding: 0 50px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  main .left-login-container {
+    padding-left: 70px;
+    flex: 0.5;
+  }
+  main .left-login-container .left-section {
+    width: 100%;
+  }
+  main .left-login-container .left-section img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .right-login-container .right-section {
+    padding-left: 0;
+    padding-right: 70px;
+  }
+}/*# sourceMappingURL=login.css.map */

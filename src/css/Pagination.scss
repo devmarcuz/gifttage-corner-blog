@@ -1,0 +1,111 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 1px solid rgb(241, 241, 241);
+
+  .pagination_btn {
+    align-items: center;
+    height: 35px;
+    justify-content: center;
+    font-weight: 500;
+    color: black;
+    font-weight: lighter;
+    cursor: not-allowed;
+    padding: 0 15px;
+    border-right: 1px solid rgb(241, 241, 241);
+    font-weight: 500;
+    display: none;
+
+    &.active-caret {
+      display: flex;
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    .icon-pag {
+      font-size: 12px;
+    }
+
+    svg {
+      text-align: center;
+      font-size: 8px;
+    }
+
+    &:hover {
+      background: black;
+      color: white;
+    }
+  }
+
+  button {
+    background: none;
+    border: none;
+    padding: 0px 15px;
+    font-family: inherit;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+    height: 35px;
+    border-right: 1px solid rgb(241, 241, 241);
+
+    &:hover {
+      color: #ffffff;
+      background: black;
+    }
+
+    &.active {
+      color: #ffffff;
+      background: black;
+    }
+
+    &.pagination__ellipsis {
+      cursor: default;
+      &:hover {
+        color: black;
+        background: none;
+      }
+    }
+  }
+
+  .empty-btn {
+    display: none;
+  }
+
+  &.dark-mode {
+    border: 1px solid rgba(255, 255, 255, 0.13);
+
+    .pagination_btn {
+      border-right: 1px solid rgba(255, 255, 255, 0.13);
+      color: rgb(196, 180, 88);
+    }
+
+    button {
+      border-right: 1px solid rgba(255, 255, 255, 0.13);
+      color: rgb(196, 180, 88);
+    }
+  }
+
+  // Extra small devices (portrait phones)
+  @media only screen and (max-width: 576px) {
+    & {
+      flex-wrap: wrap;
+
+      .empty-btn {
+        display: flex;
+        padding: 0px 10px;
+        height: 35px;
+        pointer-events: none;
+        user-select: none;
+        color: white;
+      }
+
+      &.dark-mode{
+        .empty-btn{
+          color:  rgb(19, 19, 19);
+        }
+      }
+    }
+  }
+}

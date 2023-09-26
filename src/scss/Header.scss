@@ -1,0 +1,212 @@
+nav {
+  display: flex;
+  height: 100px;
+  padding: 35px 30px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: white;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.055);
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  .logo {
+    width: 18%;
+  }
+
+  .search-container {
+    display: flex;
+    justify-content: flex-start;
+    width: 57%;
+    padding-left: 60px;
+
+    font-family: "Work Sans", sans-serif;
+
+    .search {
+      width: 400px;
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      border: 1px solid rgba(84, 95, 125, 0.103);
+
+      input[type="search"]::-webkit-search-cancel-button {
+        display: none;
+      }
+
+      input {
+        padding: 7px 15px;
+        font-weight: 400;
+        font-size: 14px;
+        color: rgb(84, 95, 125);
+        font-family: inherit;
+        width: 100%;
+        font-size: 14px;
+        font-weight: 400;
+        border: none;
+
+        &::placeholder {
+          color: #545f7d;
+          opacity: 70%;
+        }
+      }
+
+      button {
+        height: 100%;
+        background: #39cdcc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        width: 56px;
+        cursor: pointer;
+      }
+    }
+  }
+  .ends {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 25%;
+
+    a {
+      font-size: 16px;
+      font-weight: 400;
+      text-decoration: underline;
+      color: #213f7d;
+      font-family: "Roboto", sans-serif;
+      margin-right: 35px;
+    }
+
+    .notification {
+      margin-right: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      .icon {
+        font-size: 22.74px;
+        color: #213f7d;
+      }
+    }
+
+    .user-profile {
+      display: flex;
+      align-items: center;
+
+      .image-profile {
+        height: 48px;
+        width: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        border-radius: 50%;
+        margin-right: 10px;
+        cursor: pointer;
+
+        img {
+          object-fit: contain;
+          object-position: center;
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      p {
+        font-family: "Work Sans", sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        color: #213f7d;
+        cursor: pointer;
+      }
+
+      .icon {
+        color: #213f7d;
+        margin: 0 13px;
+        font-size: 13px;
+        cursor: pointer;
+      }
+
+      .bar {
+        display: none;
+      }
+    }
+  }
+
+  // Extra small devices (portrait phones)
+  @media only screen and (max-width: 576px) {
+    & {
+      .search-container {
+        display: none;
+      }
+
+      .ends {
+        a {
+          display: none;
+        }
+
+        .notification {
+          display: none;
+        }
+
+        .user-profile {
+          p {
+            display: none;
+          }
+
+          .icon {
+            display: none;
+          }
+
+          .bar {
+            display: inherit;
+            font-size: 30px;
+            color: #213f7d;
+            margin-left: 10px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  // Medium devices (tablets)
+  @media only screen and (min-width: 576px) and (max-width: 992px) {
+    & {
+      .search-container {
+        display: flex;
+      }
+
+      .ends {
+        a {
+          display: none;
+        }
+
+        .notification {
+          display: none;
+        }
+
+        .user-profile {
+          p {
+            display: none;
+          }
+
+          .icon {
+            display: none;
+          }
+
+          .bar {
+            display: inherit;
+            font-size: 30px;
+            color: #213f7d;
+            margin-left: 10px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

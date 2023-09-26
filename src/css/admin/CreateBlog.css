@@ -1,0 +1,218 @@
+@charset "UTF-8";
+.create-post-container {
+  width: 100%;
+  margin: 50px 0;
+  position: relative;
+}
+.create-post-container .create-header {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.create-post-container .create-header h1 {
+  font-size: 20px;
+  font-weight: 500;
+  width: 50%;
+}
+.create-post-container .create-header h1:last-child {
+  text-align: center;
+}
+.create-post-container .text-editor {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  height: 100vh;
+}
+.create-post-container .text-editor .editor {
+  width: 50%;
+  height: 100%;
+}
+.create-post-container .text-editor .editor .title {
+  margin-bottom: 20px;
+}
+.create-post-container .text-editor .editor .title input {
+  width: 100%;
+  padding: 10px;
+  font-family: inherit;
+  border: 1px solid rgba(0, 0, 0, 0.233);
+  font-size: 15px;
+}
+.create-post-container .text-editor .editor .categories-container {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.233);
+  margin-top: 20px;
+  padding: 10px;
+}
+.create-post-container .text-editor .editor .categories-container h2 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.create-post-container .text-editor .editor .categories-container .categories {
+  display: flex;
+}
+.create-post-container .text-editor .editor .categories-container .categories .category {
+  font-size: 10px;
+  padding: 5px;
+  margin-right: 10px;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.121);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+.create-post-container .text-editor .editor .categories-container .categories .category:hover {
+  box-shadow: 0px 0px 8px 0px rgba(239, 239, 239, 0.242);
+  background: rgb(246, 255, 121);
+  color: rgb(133, 119, 0);
+}
+.create-post-container .text-editor .editor .categories-container .categories .category.active {
+  box-shadow: 0px 0px 8px 0px rgba(239, 239, 239, 0.242);
+  background: rgb(246, 255, 121);
+  color: rgb(133, 119, 0);
+}
+.create-post-container .text-editor .editor .quill-editor {
+  height: 85%;
+  width: 100%;
+}
+.create-post-container .text-editor .preview {
+  width: 50%;
+  height: 100%;
+  max-height: 100vh;
+  overflow: auto;
+  border-left: 2px solid white;
+  font-size: 13px;
+  font-family: poppins;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+.create-post-container .text-editor .preview h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 26px;
+  padding: 15px 0;
+}
+.create-post-container .text-editor .preview .content ul {
+  list-style: disc;
+  padding-left: 23px;
+}
+.create-post-container .text-editor .preview .content ol {
+  padding-left: 20px;
+}
+.create-post-container .text-editor .preview .content blockquote {
+  font-size: 1.4em;
+  width: 100%;
+  margin: 0 auto;
+  font-family: Open sans;
+  font-style: italic;
+  color: #555555;
+  padding: 1.2em 30px 1.2em 75px;
+  border-left: 8px solid rgb(255, 231, 75);
+  line-height: 1.6;
+  position: relative;
+  background: rgb(236, 228, 175);
+}
+.create-post-container .text-editor .preview .content blockquote::before {
+  font-family: Arial;
+  content: "“";
+  content: #78c0a8;
+  font-size: 4em;
+  position: absolute;
+  left: 10px;
+  top: -10px;
+}
+.create-post-container .text-editor .preview .content blockquote::after {
+  content: "";
+}
+.create-post-container .text-editor .preview .content a {
+  color: black;
+  position: relative;
+  height: 17px;
+  z-index: 10;
+  transition: 0.3s all ease-in-out;
+}
+.create-post-container .text-editor .preview .content a::after {
+  content: "";
+  position: absolute;
+  bottom: -5%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: rgb(221, 170, 31);
+  transition: 0.3s all ease-in-out;
+  transform-origin: top;
+}
+.create-post-container .text-editor .preview .content a:hover {
+  color: white;
+}
+.create-post-container .text-editor .preview .content a:hover::after {
+  height: 100%;
+  z-index: -10;
+}
+.create-post-container .text-editor .preview .content img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 400px;
+}
+.create-post-container .text-editor .preview .content video {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 400px;
+}
+.create-post-container .button {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 190px;
+  padding-bottom: 30px;
+}
+.create-post-container .button button {
+  background: rgb(228, 194, 0);
+  border: none;
+  padding: 12px 15px;
+  margin-right: 20px;
+  font-family: inherit;
+  font-weight: 500;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.create-post-container .button button:last-child {
+  background: black;
+  color: white;
+}
+.create-post-container .button button.btn-disable {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.create-post-container.display-right .text-editor {
+  width: 95%;
+}
+.create-post-container.display-right .create-header {
+  width: 95%;
+}
+.create-post-container.display-right button {
+  width: 95%;
+}
+@media only screen and (max-width: 576px) {
+  .create-post-container {
+    overflow-x: scroll;
+  }
+  .create-post-container .create-header {
+    width: 170%;
+    margin: 0 20px;
+    margin-bottom: 20px;
+  }
+  .create-post-container .text-editor {
+    width: 170%;
+    margin: 0 20px;
+  }
+}/*# sourceMappingURL=CreateBlog.css.map */

@@ -1,0 +1,150 @@
+import React, { useState, useEffect } from "react";
+import "../css/admin/CommentBlog.css";
+import {
+  addComment,
+  addNotification,
+  getAllComments,
+  getComments,
+  getPosts,
+  updatePost,
+} from "../firebase/firebase_routes";
+import CommentItem from "./CommentItem";
+import CommentInput from "./CommentInput";
+import LoadingContainer from "./LoadingContainer";
+
+const CommentsBlog = ({ blogId }) => {
+  const [comments, setComments] = useState([]);
+  const [commentText, setCommentText] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [notification, setNotification] = useState(false);
+
+  const loadComments = async () => {
+    setLoading(true);
+    try {
+      const commentsData = await getComments(blogId, "asc");
+      console.log(commentsData);
+      function timestampToDate(timestamp) {
+        const date = timestamp.toDate(); // Convert Firestore Timestamp to JavaScript Date
+
+        const options = {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+          hour: "numeric",
+          minute: "numeric",
+        };
+
+        return new Intl.DateTimeFormat("en-US", options).format(date);
+      }
+      setComments(
+        commentsData
+          .filter((dt) => {
+            if (dt.postId === blogId) {
+              return dt;
+            }
+          })
+          .sort((obj2, obj1) => {
+            const date1 = timestampToDate(obj1.createdAt);
+            const date2 = timestampToDate(obj2.createdAt);
+
+            // Compare the dates in reverse order
+            if (date1 < date2) {
+              return 1; // obj1 comes after obj2
+            } else if (date1 > date2) {
+              return -1; // obj1 comes before obj2
+            } else {
+              return 0; // dates are equal
+            }
+          })
+      );
+      setLoading(false);
+    } catch (error) {
+      console.error("Error loading comments:", error);
+    }
+  };
+
+  useEffect(() => {
+    loadComments();
+  }, [blogId]);
+
+  useEffect(() => {
+    if (notification && comments) {
+      addNotification(comments[comments.length - 1]);
+    }
+  }, [notification, comments]);
+
+  const onComment = async (data, parentCommentId = null) => {
+    setLoading(true);
+    setNotification(false);
+    const { text, name, email } = data;
+    if (text.trim() !== "") {
+      try {
+        await addComment({
+          postId: blogId,
+          commentText: text,
+          name,
+          email,
+          parentCommentId,
+        });
+        setNotification(true);
+
+        loadComments();
+        setCommentText("");
+        setLoading(false);
+
+        getAllComments().then((res) => {
+          let comments = res;
+
+          getPosts().then((res) => {
+            res.forEach((dt) => {
+              const getAllPostCommentLength = (id) => {
+                let data = comments.filter((dt) => {
+                  if (dt.postId === id) {
+                    return dt;
+                  }
+                });
+                let formData = {
+                  comments: data.length,
+                };
+                updatePost(dt.id, formData);
+              };
+              getAllPostCommentLength(dt.id);
+            });
+          });
+        });
+      } catch (error) {
+        console.error("Error adding comment:", error);
+        setLoading(true);
+      }
+    }
+  };
+
+  return (
+    <div className="comment-blog-container">
+      <h1>SHARE YOUR THOUGHTS...</h1>
+      <CommentInput
+        onComment={(text) => onComment(text)}
+        commentText={commentText}
+        setCommentText={setCommentText}
+      />
+      {comments.length >= 1 && (
+        <div className="comments">
+          {loading && <LoadingContainer newsletter={true} />}
+          <h1>COMMENTS</h1>
+          <div className="cmt-container">
+            {comments.map((comment) => (
+              <CommentItem
+                key={comment.id}
+                comment={comment}
+                loadComments={loadComments}
+                onComment={onComment}
+              />
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default CommentsBlog;

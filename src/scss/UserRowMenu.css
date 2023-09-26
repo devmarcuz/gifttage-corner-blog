@@ -1,0 +1,25 @@
+.row-menu {
+  position: absolute;
+  background: white;
+  right: -10%;
+  bottom: -230%;
+  border: 1px solid;
+  border-color: rgba(84, 95, 125, 0.0392156863);
+  z-index: 5;
+  width: 180px;
+  padding-bottom: 25px;
+  display: none;
+}
+.row-menu .item {
+  display: flex;
+  padding: 0 30px;
+  padding-top: 25px;
+  cursor: pointer;
+}
+.row-menu .item svg {
+  margin-right: 10px;
+}
+.row-menu .item p {
+  font-size: 14px;
+  font-weight: 500;
+}/*# sourceMappingURL=UserRowMenu.css.map */

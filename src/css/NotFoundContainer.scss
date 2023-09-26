@@ -1,0 +1,223 @@
+.not-found {
+  width: 100%;
+  overflow-x: hidden;
+
+  .not-found-section {
+    width: 50%;
+    margin: 50px auto;
+    margin-bottom: 100px;
+
+    h1 {
+      text-align: center;
+      font-size: 10em;
+      font-family: poppins;
+      letter-spacing: 15px;
+      font-family: "Work Sans", sans-serif;
+      -webkit-text-stroke: 2px;
+      -webkit-text-stroke-color: rgb(255, 169, 56);
+      color: transparent;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 32px;
+      text-transform: uppercase;
+      font-family: "Cormorant Garamond", serif;
+      color: rgb(253, 201, 133);
+      font-weight: 100;
+      margin-bottom: 20px;
+    }
+
+    p {
+      text-align: center;
+      font-family: poppins;
+      font-size: 14px;
+      font-weight: 300;
+    }
+
+    .actions {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 15px;
+
+      .search-container {
+        flex: 0.7;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-top: 15px;
+
+        .search {
+          width: 100%;
+          height: 45px;
+          overflow: hidden;
+
+          input {
+            width: 80%;
+            padding: 10px;
+            border: none;
+            background: rgb(247, 247, 247);
+            font-family: "Work Sans", sans-serif;
+            font-size: 13px;
+            height: 100%;
+
+            &::placeholder {
+              letter-spacing: 2px;
+              color: rgb(148, 148, 148);
+            }
+          }
+
+          button {
+            width: 20%;
+            height: 100%;
+            border: none;
+            background: rgb(253, 190, 108);
+            cursor: pointer;
+            overflow: hidden;
+
+            svg {
+              text-align: center;
+              color: white;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+
+      a {
+        background: rgb(253, 190, 108);
+        text-transform: uppercase;
+        padding: 8px 15px;
+        color: white;
+        font-family: poppins;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  &.dark-mode {
+    .not-found-section {
+      h1 {
+        text-align: center;
+        font-size: 10em;
+        font-family: poppins;
+        letter-spacing: 15px;
+        font-family: "Work Sans", sans-serif;
+        -webkit-text-stroke: 1px;
+        -webkit-text-stroke-color: rgb(255, 169, 56);
+        color: transparent;
+      }
+
+      h2 {
+        text-align: center;
+        font-size: 32px;
+        text-transform: uppercase;
+        font-family: "Cormorant Garamond", serif;
+        color: rgb(253, 201, 133);
+        font-weight: 100;
+        margin-bottom: 20px;
+      }
+
+      p {
+        color: white;
+      }
+
+      .actions {
+        .search-container {
+          .search {
+            input {
+              background: rgba(247, 247, 247, 0.027);
+              color: white;
+
+              &::placeholder {
+                letter-spacing: 2px;
+                color: rgba(148, 148, 148, 0.541);
+              }
+            }
+
+            button {
+              background: rgb(143, 123, 12);
+            }
+          }
+        }
+
+        a {
+          background: rgb(143, 123, 12);
+          text-transform: uppercase;
+          padding: 8px 15px;
+          color: white;
+          font-family: poppins;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+
+  // Extra small devices (portrait phones)
+  @media only screen and (max-width: 576px) {
+    & {
+      .not-found-section {
+        width: 80%;
+
+        h1 {
+          font-size: 7em;
+          -webkit-text-stroke: 2px;
+          -webkit-text-stroke-color: rgb(255, 169, 56);
+        }
+
+        h2 {
+          font-size: 23px;
+          margin-bottom: 15px;
+        }
+
+        p {
+          font-size: 12px;
+        }
+
+        .actions {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          align-items: flex-start;
+          margin-top: 15px;
+          flex-direction: column;
+
+          .search-container {
+            width: 100%;
+            margin-bottom: 20px;
+
+            .search {
+              width: 100%;
+              height: 40px;
+              overflow: hidden;
+            }
+          }
+
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  // Small devices (landscape phones)
+  @media only screen and (min-width: 576px) and (max-width: 768px) {
+    & {
+      .not-found-section {
+        width: 70%;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 769px) and (max-width: 992px) {
+    & {
+      .not-found-section {
+        width: 70%;
+        height: 100vh;
+      }
+    }
+  }
+}

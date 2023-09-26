@@ -1,0 +1,230 @@
+.blog-admin-container {
+  .admin-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    .left-section-dashboard {
+      width: 20%;
+      height: 100vh;
+      background: rgb(255, 235, 121);
+      position: fixed;
+      transition: 0.7s all ease;
+      left: -100%;
+
+      .icon-menu {
+        position: absolute;
+        right: -5%;
+        background: white;
+        padding: 8px 10px;
+        border-radius: 50%;
+        top: 3%;
+        border: 1px solid rgb(255, 175, 14);
+        cursor: pointer;
+        color: rgb(255, 175, 14);
+      }
+
+      .icon-menu-responsive {
+        display: none;
+        position: absolute;
+        right: -5%;
+        background: white;
+        padding: 8px 10px;
+        border-radius: 50%;
+        top: 3%;
+        border: 1px solid rgb(255, 175, 14);
+        cursor: pointer;
+        color: rgb(255, 175, 14);
+      }
+
+      &.display-left {
+        left: 0%;
+      }
+
+      .left-header {
+        width: 100%;
+        padding: 0 10px;
+
+        h1 {
+          text-align: center;
+          font-family: "Nothing You Could Do", cursive;
+          // font-size: 40px;
+          margin-top: 20px;
+          margin-bottom: 50px;
+          user-select: none;
+          width: 100%;
+          text-transform: uppercase;
+        }
+      }
+
+      .action-link {
+        a {
+          color: black;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          padding: 10px 20px;
+          transition: 0.2s all ease-in-out;
+
+          svg {
+            margin-right: 10px;
+          }
+
+          p {
+            font-size: 15px;
+            font-family: poppins;
+          }
+
+          &:hover {
+            color: rgb(255, 235, 121);
+            background: white;
+          }
+
+          &.active {
+            color: rgb(255, 235, 121);
+            background: white;
+          }
+        }
+      }
+    }
+  }
+
+  // Extra small devices (portrait phones)
+  @media only screen and (max-width: 576px) {
+    & {
+      & {
+        .admin-container {
+          .left-section-dashboard {
+            display: none;
+
+            .left-header {
+              width: 100%;
+              padding: 0 10px;
+
+              h1 {
+                font-size: 24px;
+              }
+            }
+
+            &.display-responsive {
+              display: block;
+              width: 50%;
+              top: 0;
+              left: 0;
+              z-index: 100;
+              position: fixed;
+            }
+
+            .icon-menu {
+              display: none;
+            }
+
+            .icon-menu-responsive {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Small devices (landscape phones)
+  @media only screen and (min-width: 576px) and (max-width: 768px) {
+    & {
+      & {
+        .admin-container {
+          .left-section-dashboard {
+            display: none;
+
+            .left-header {
+              width: 100%;
+              padding: 0 10px;
+
+              h1 {
+                font-size: 24px;
+              }
+            }
+
+            &.display-responsive {
+              display: block;
+              width: 50%;
+              top: 0;
+              left: 0;
+              z-index: 100;
+              position: fixed;
+            }
+
+            .icon-menu {
+              display: none;
+            }
+
+            .icon-menu-responsive {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Medium devices (tablets)
+  @media only screen and (min-width: 769px) and (max-width: 992px) {
+    & {
+      & {
+        .admin-container {
+          .left-section-dashboard {
+            display: none;
+
+            .left-header {
+              width: 100%;
+              padding: 0 10px;
+
+              h1 {
+                font-size: 24px;
+              }
+            }
+
+            &.display-responsive {
+              display: block;
+              width: 50%;
+              top: 0;
+              left: 0;
+              z-index: 100;
+              position: fixed;
+            }
+
+            .icon-menu {
+              display: none;
+            }
+
+            .icon-menu-responsive {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Large devices (desktops)
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    & {
+      .admin-container {
+        .left-section-dashboard {
+          &.display-left {
+            left: 0%;
+          }
+
+          .left-header {
+            width: 100%;
+            padding: 0 10px;
+
+            h1 {
+              font-size: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,304 @@
+.comment-blog-container {
+  width: 100%;
+  background: rgb(255, 235, 121);
+  padding: 50px;
+  margin-top: 80px;
+  padding-top: 30px;
+}
+.comment-blog-container h1 {
+  padding: 0;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 100;
+  color: rgb(146, 115, 28);
+  font-size: 23px;
+  margin-bottom: 25px;
+}
+.comment-blog-container .text-area .input-text {
+  padding: 20px;
+  width: 100%;
+  background: rgb(253, 251, 239);
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  padding-bottom: 5px;
+  resize: none;
+  font-family: poppins;
+  width: 100%;
+  font-weight: 300;
+  font-size: 13px;
+}
+.comment-blog-container .text-area .input-text::-moz-placeholder {
+  color: rgba(221, 170, 31, 0.932);
+  font-size: 14px;
+}
+.comment-blog-container .text-area .input-text::placeholder {
+  color: rgba(221, 170, 31, 0.932);
+  font-size: 14px;
+}
+.comment-blog-container .text-area .form {
+  background: rgb(255, 238, 145);
+  padding: 20px 30px;
+  transform: translateY(-100%);
+  display: none;
+  z-index: -100;
+}
+.comment-blog-container .text-area .form.active {
+  display: block;
+  transform: translateY(0%);
+  z-index: 1;
+}
+.comment-blog-container .text-area .form p {
+  color: rgb(146, 115, 28);
+  font-size: 13px;
+}
+.comment-blog-container .text-area .form .inp {
+  border: 1px solid rgb(221, 170, 31);
+  border: none;
+  padding: 8px 15px;
+  font-family: inherit;
+  background: rgb(253, 251, 239);
+  width: 100%;
+  font-size: 13px;
+  font-weight: 300;
+  margin-top: 25px;
+}
+.comment-blog-container .text-area .form .inp::-moz-placeholder {
+  color: rgba(221, 170, 31, 0.932);
+  font-size: 13px;
+}
+.comment-blog-container .text-area .form .inp::placeholder {
+  color: rgba(221, 170, 31, 0.932);
+  font-size: 13px;
+}
+.comment-blog-container .text-area .form .input {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-top: 20px;
+}
+.comment-blog-container .text-area .form .input input {
+  cursor: pointer;
+}
+.comment-blog-container .text-area .form .input .content {
+  font-size: 12px;
+  padding-left: 10px;
+  color: rgb(146, 115, 28);
+}
+.comment-blog-container .text-area button {
+  border: none;
+  font-family: poppins;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: rgb(233, 184, 49);
+  color: white;
+  margin-top: 10px;
+  font-size: 12px;
+}
+.comment-blog-container .comments {
+  margin-top: 50px;
+  background: rgb(253, 251, 239);
+  padding: 30px 40px;
+  padding-top: 15px;
+}
+.comment-blog-container .comments h1 {
+  color: rgb(201, 161, 53);
+  font-size: 25px;
+}
+.comment-blog-container .comments .cmt-container {
+  max-height: 400px;
+  overflow: auto;
+}
+.comment-blog-container .comments .cmt-container .comment-text {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid rgba(168, 155, 82, 0.171);
+  background: white;
+  position: relative;
+}
+.comment-blog-container .comments .cmt-container .comment-text .details {
+  font-size: 11px;
+  font-family: "Work Sans", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  color: rgb(218, 200, 102);
+  letter-spacing: 1px;
+}
+.comment-blog-container .comments .cmt-container .comment-text .details a {
+  color: rgb(185, 170, 86);
+  cursor: default;
+}
+.comment-blog-container .comments .cmt-container .comment-text .details a.admin {
+  color: rgb(198, 0, 0);
+}
+.comment-blog-container .comments .cmt-container .comment-text .details span {
+  cursor: pointer;
+}
+.comment-blog-container .comments .cmt-container .comment-text .details span:hover {
+  color: rgb(185, 170, 86);
+}
+.comment-blog-container .comments .cmt-container .comment-text p {
+  font-size: 12px;
+  font-family: poppins;
+  padding: 0;
+  margin: 0;
+}
+.comment-blog-container .comments .cmt-container .comment-text button {
+  border: none;
+  font-family: poppins;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: rgb(233, 184, 49);
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+.comment-blog-container .comments .cmt-container .comment-text .text-area {
+  margin-top: 20px;
+}
+.comment-blog-container .comments .cmt-container .comment-text .del {
+  position: absolute;
+  top: 0%;
+  right: 5%;
+  display: none;
+}
+.comment-blog-container .comments .cmt-container .comment-text .del svg {
+  margin-top: 10px;
+  color: rgb(255, 76, 76);
+  cursor: pointer;
+}
+.comment-blog-container .comments .cmt-container .comment-text:hover .del {
+  display: block;
+}
+.comment-blog-container.dark-mode {
+  background: rgb(143, 123, 12);
+}
+.comment-blog-container.dark-mode h1 {
+  color: rgb(255, 211, 88);
+}
+.comment-blog-container.dark-mode .text-area .input-text {
+  background: rgba(0, 0, 0, 0.603);
+  color: white;
+}
+.comment-blog-container.dark-mode .text-area .input-text::-moz-placeholder {
+  color: rgba(221, 170, 31, 0.932);
+  font-size: 14px;
+}
+.comment-blog-container.dark-mode .text-area .input-text::placeholder {
+  color: rgba(221, 170, 31, 0.932);
+  font-size: 14px;
+}
+.comment-blog-container.dark-mode .text-area .form {
+  background: rgba(0, 0, 0, 0.411);
+}
+.comment-blog-container.dark-mode .text-area .form.active {
+  display: block;
+  transform: translateY(0%);
+  z-index: 1;
+}
+.comment-blog-container.dark-mode .text-area .form p {
+  color: rgb(219, 172, 42);
+}
+.comment-blog-container.dark-mode .text-area .form .inp {
+  border: 1px solid rgb(221, 170, 31);
+  border: none;
+  color: white;
+  background: rgba(0, 0, 0, 0.603);
+}
+.comment-blog-container.dark-mode .text-area .form .inp::-moz-placeholder {
+  color: rgba(221, 170, 31, 0.932);
+  font-size: 13px;
+}
+.comment-blog-container.dark-mode .text-area .form .inp::placeholder {
+  color: rgba(221, 170, 31, 0.932);
+  font-size: 13px;
+}
+.comment-blog-container.dark-mode .text-area .form .inp::-moz-placeholder {
+  color: rgba(221, 170, 31, 0.932);
+  font-size: 13px;
+}
+.comment-blog-container.dark-mode .text-area .form .inp::placeholder {
+  color: rgba(221, 170, 31, 0.932);
+  font-size: 13px;
+}
+.comment-blog-container.dark-mode .text-area .form .input {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-top: 20px;
+}
+.comment-blog-container.dark-mode .text-area .form .input input {
+  cursor: pointer;
+}
+.comment-blog-container.dark-mode .text-area .form .input .content {
+  font-size: 12px;
+  padding-left: 10px;
+  color: rgb(219, 172, 42);
+}
+.comment-blog-container.dark-mode .comments {
+  background: rgba(0, 0, 0, 0.603);
+}
+.comment-blog-container.dark-mode .comments h1 {
+  color: rgb(201, 161, 53);
+}
+.comment-blog-container.dark-mode .comments .cmt-container .comment-text {
+  border: 1px solid rgba(168, 155, 82, 0.577);
+  background: rgb(66, 49, 0);
+}
+.comment-blog-container.dark-mode .comments .cmt-container .comment-text .details {
+  color: rgb(218, 200, 102);
+}
+.comment-blog-container.dark-mode .comments .cmt-container .comment-text p {
+  color: white;
+}
+@media only screen and (max-width: 576px) {
+  .comment-blog-container {
+    padding: 20px;
+    padding-top: 30px;
+  }
+  .comment-blog-container .comments {
+    padding: 20px 15px;
+    padding-top: 15px;
+  }
+  .comment-blog-container .comments .cmt-container .comment-text {
+    margin-bottom: 10px;
+  }
+  .comment-blog-container .comments .cmt-container .comment-text .details {
+    font-size: 9px;
+  }
+  .comment-blog-container .comments .cmt-container .comment-text p {
+    font-size: 10px;
+  }
+  .comment-blog-container .comments .cmt-container .comment-text button {
+    padding: 5px 8px;
+    font-size: 10px;
+  }
+  .comment-blog-container .comments .cmt-container .comment-text .del svg {
+    font-size: 14px;
+  }
+  .comment-blog-container.dark-mode .comments {
+    padding: 20px 15px;
+    padding-top: 15px;
+  }
+  .comment-blog-container.dark-mode .comments .cmt-container .comment-text {
+    margin-bottom: 10px;
+  }
+  .comment-blog-container.dark-mode .comments .cmt-container .comment-text .details {
+    font-size: 9px;
+  }
+  .comment-blog-container.dark-mode .comments .cmt-container .comment-text p {
+    font-size: 10px;
+  }
+  .comment-blog-container.dark-mode .comments .cmt-container .comment-text button {
+    padding: 5px 8px;
+    font-size: 10px;
+  }
+  .comment-blog-container.dark-mode .comments .cmt-container .comment-text .del svg {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=CommentBlog.css.map */

@@ -1,0 +1,75 @@
+.loader-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+.loader-container.active {
+  height: 50px;
+}
+.loader-container .loader {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.loader-container .loader div {
+  position: absolute;
+  top: 33px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ffd782;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.loader-container .loader div:nth-child(1) {
+  left: 8px;
+  animation: ids1 0.6s infinite;
+}
+.loader-container .loader div:nth-child(2) {
+  left: 8px;
+  animation: ids2 0.6s infinite;
+}
+.loader-container .loader div:nth-child(3) {
+  left: 32px;
+  animation: ids2 0.6s infinite;
+}
+.loader-container .loader div:nth-child(4) {
+  left: 56px;
+  animation: ids3 0.6s infinite;
+}
+@keyframes ids1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes ids3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes ids2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .loader-container {
+    height: 70vh;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .loader-container {
+    height: 100vh;
+  }
+}/*# sourceMappingURL=loading.css.map */
